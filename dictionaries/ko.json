@@ -1,0 +1,286 @@
+{
+  "metadata": {
+    "title": "스마트 개발자 도구 모음 | Sparky",
+    "description": "개발자를 위한 온라인 도구 모음. JSON, Base64, URL, JWT, UUID 등 모든 도구를 한 곳에서."
+  },
+  "nav": {
+    "home": "홈",
+    "devTools": "개발자 도구"
+  },
+  "header": {
+    "searchPlaceholder": "도구 검색...",
+    "collapseLabel": "사이드바 접기",
+    "menuLabel": "메뉴 열기",
+    "darkModeLabel": "다크 모드 전환"
+  },
+  "footer": {
+    "privacy": "개인정보 처리방침",
+    "terms": "이용약관",
+    "contact": "문의하기"
+  },
+  "home": {
+    "badge": "무료 온라인 유틸리티",
+    "heading1": "개발 실무에 꼭 필요한",
+    "heading2": "개발자 도구",
+    "subheading": "안전하고 빠르며 설치가 필요 없습니다. 브라우저에서 바로 사용할 수 있는 편리한 도구를 한 화면에 모았습니다.",
+    "allTools": "모든 도구",
+    "toolsAvailable": "개 도구",
+    "noResults": "일치하는 도구가 없습니다.",
+    "tryIt": "사용해보기 →"
+  },
+  "tools": [
+    {
+      "title": "JSON 포매터",
+      "description": "복잡한 JSON을 읽기 쉽게 정렬하고 구문 오류를 쉽게 찾을 수 있습니다.",
+      "href": "/ko/conv/json-formatter",
+      "accent": "text-blue-500 bg-blue-50 dark:bg-blue-500/15",
+      "icon": "braces"
+    },
+    {
+      "title": "Base64 변환",
+      "description": "텍스트나 데이터를 Base64로 인코딩하거나 원래 형식으로 디코딩합니다.",
+      "href": "/ko/conv/base64",
+      "accent": "text-cyan-500 bg-cyan-50 dark:bg-cyan-500/15",
+      "icon": "hash"
+    },
+    {
+      "title": "URL 인코더/디코더",
+      "description": "URL의 특수 문자와 쿼리 문자열을 안전하게 변환합니다.",
+      "href": "/ko/conv/url-encoder",
+      "accent": "text-teal-500 bg-teal-50 dark:bg-teal-500/15",
+      "icon": "link"
+    },
+    {
+      "title": "XML 포매터",
+      "description": "XML 문서를 보기 좋게 정렬하여 검토 및 압축 작업을 도와줍니다.",
+      "href": "/ko/xml-formatter",
+      "accent": "text-orange-500 bg-orange-50 dark:bg-orange-500/15",
+      "icon": "code"
+    },
+    {
+      "title": "SQL 포매터",
+      "description": "복잡한 SQL 쿼리를 읽기 쉬운 형태로 정리하여 리뷰하기 쉽게 합니다.",
+      "href": "/ko/sql-formatter",
+      "accent": "text-indigo-500 bg-indigo-50 dark:bg-indigo-500/15",
+      "icon": "database"
+    },
+    {
+      "title": "JWT 디코더",
+      "description": "JSON Web Token의 헤더와 페이로드를 빠르게 확인합니다.",
+      "href": "/ko/jwt-decoder",
+      "accent": "text-yellow-500 bg-yellow-50 dark:bg-yellow-500/15",
+      "icon": "key"
+    },
+    {
+      "title": "Markdown 미리보기",
+      "description": "Markdown 입력 내용을 실시간으로 미리볼 수 있습니다.",
+      "href": "/ko/conv/markdown",
+      "accent": "text-violet-500 bg-violet-50 dark:bg-violet-500/15",
+      "icon": "type"
+    },
+    {
+      "title": "HTML 엔티티 변환",
+      "description": "특수 문자를 HTML 엔티티로 변환하고 역변환도 지원합니다.",
+      "href": "/ko/html-entity",
+      "accent": "text-green-500 bg-green-50 dark:bg-green-500/15",
+      "icon": "code"
+    },
+    {
+      "title": "Hex ↔ 텍스트 변환",
+      "description": "문자열과 16진수 표현을 상호 변환합니다.",
+      "href": "/ko/hex-text",
+      "accent": "text-slate-500 bg-slate-100 dark:bg-slate-500/15",
+      "icon": "binary"
+    },
+    {
+      "title": "색상 코드 변환",
+      "description": "HEX, RGB, HSL을 전환하며 색상을 확인하고 선택할 수 있습니다.",
+      "href": "/ko/color-converter",
+      "accent": "text-pink-500 bg-pink-50 dark:bg-pink-500/15",
+      "icon": "palette"
+    },
+    {
+      "title": "UUID 생성기",
+      "description": "UUID v4를 원하는 수만큼 생성하고 즉시 복사할 수 있습니다.",
+      "href": "/ko/uuid-generator",
+      "accent": "text-sky-500 bg-sky-50 dark:bg-sky-500/15",
+      "icon": "fingerprint"
+    },
+    {
+      "title": "해시 생성기",
+      "description": "입력 텍스트에서 MD5 및 SHA 계열 해시를 생성합니다.",
+      "href": "/ko/hash-generator",
+      "accent": "text-purple-500 bg-purple-50 dark:bg-purple-500/15",
+      "icon": "hash"
+    },
+    {
+      "title": "비밀번호 생성기",
+      "description": "조건을 조정하여 무작위의 강력한 비밀번호를 생성합니다.",
+      "href": "/ko/password-generator",
+      "accent": "text-red-500 bg-red-50 dark:bg-red-500/15",
+      "icon": "lock"
+    },
+    {
+      "title": "QR 코드 생성기",
+      "description": "URL이나 텍스트에서 QR 코드를 생성하여 즉시 사용할 수 있습니다.",
+      "href": "/ko/qr-generator",
+      "accent": "text-zinc-700 bg-zinc-100 dark:text-zinc-200 dark:bg-zinc-500/15",
+      "icon": "qr"
+    },
+    {
+      "title": "Lorem Ipsum 생성기",
+      "description": "프로토타입용 더미 텍스트를 원하는 양만큼 생성합니다.",
+      "href": "/ko/lorem-ipsum",
+      "accent": "text-violet-500 bg-violet-50 dark:bg-violet-500/15",
+      "icon": "type"
+    },
+    {
+      "title": "Unix 시간 변환",
+      "description": "Unix 타임스탬프와 일반 날짜/시간을 상호 변환합니다.",
+      "href": "/ko/epoch-converter",
+      "accent": "text-sky-500 bg-sky-50 dark:bg-sky-500/15",
+      "icon": "clock"
+    },
+    {
+      "title": "IP 주소 확인",
+      "description": "외부 IP 주소와 연결 정보를 확인하는 도구입니다.",
+      "href": "/ko/ip-locator",
+      "accent": "text-teal-500 bg-teal-50 dark:bg-teal-500/15",
+      "icon": "link"
+    },
+    {
+      "title": "User-Agent 파서",
+      "description": "User-Agent 문자열에서 OS, 브라우저, 디바이스 정보를 추출합니다.",
+      "href": "/ko/user-agent",
+      "accent": "text-fuchsia-500 bg-fuchsia-50 dark:bg-fuchsia-500/15",
+      "icon": "fingerprint"
+    },
+    {
+      "title": "글자 수 카운터",
+      "description": "문자 수, 단어 수, 줄 수, 바이트 수를 실시간으로 계산합니다.",
+      "href": "/ko/word-counter",
+      "accent": "text-emerald-500 bg-emerald-50 dark:bg-emerald-500/15",
+      "icon": "file"
+    },
+    {
+      "title": "케이스 변환",
+      "description": "대문자, 소문자, snake_case, camelCase 등으로 변환합니다.",
+      "href": "/ko/case-converter",
+      "accent": "text-blue-500 bg-blue-50 dark:bg-blue-500/15",
+      "icon": "case"
+    },
+    {
+      "title": "정규식 테스터",
+      "description": "정규식을 입력하고 매칭 결과를 즉시 확인할 수 있습니다.",
+      "href": "/ko/regex-tester",
+      "accent": "text-purple-500 bg-purple-50 dark:bg-purple-500/15",
+      "icon": "searchCode"
+    },
+    {
+      "title": "텍스트 비교",
+      "description": "두 텍스트를 나란히 놓고 차이점을 확인합니다.",
+      "href": "/ko/text-diff",
+      "accent": "text-orange-500 bg-orange-50 dark:bg-orange-500/15",
+      "icon": "split"
+    }
+  ],
+  "jsonFormatter": {
+    "title": "JSON 포맷터",
+    "subtitle": "JSON 데이터를 실시간으로 정렬(Pretty Print), 검증(Validation) 및 압축(Minify)합니다.",
+    "input": "입력",
+    "output": "출력",
+    "copy": "복사",
+    "copied": "복사되었습니다!",
+    "pastePlaceholder": "여기에 JSON을 붙여넣으세요...",
+    "btnFormat": "정렬하기",
+    "btnMinify": "압축하기",
+    "btnRepair": "JSON 복구",
+    "btnSort": "키 정렬",
+    "btnIndent": "들여쓰기",
+    "btnClear": "지우기",
+    "tabText": "텍스트",
+    "tabTree": "트리",
+    "tabTypeScript": "TypeScript",
+    "tabZod": "Zod Schema",
+    "validJson": "유효한 JSON",
+    "invalidJson": "유효하지 않은 JSON",
+    "repairedMsg": "JSON이 성공적으로 복구되었습니다!",
+    "repairFailMsg": "JSON을 복구할 수 없습니다"
+  },
+  "base64": {
+    "title": "Base64 변환",
+    "subtitle": "텍스트를 Base64로 인코딩하거나 Base64 문자열을 UTF-8로 디코딩합니다.",
+    "inputLabel": "입력",
+    "outputLabel": "출력",
+    "encode": "인코딩",
+    "decode": "디코딩",
+    "clear": "지우기",
+    "copy": "복사",
+    "copied": "복사됨!",
+    "urlSafe": "URL 안전 Base64",
+    "removePadding": "패딩 제거",
+    "ignoreWhitespace": "공백 무시",
+    "invalidInput": "유효하지 않은 Base64 입력입니다.",
+    "inputStats": "입력",
+    "outputStats": "출력",
+    "bytes": "바이트",
+    "chars": "문자",
+    "pastePlaceholder": "텍스트 또는 Base64 문자열을 여기에 붙여넣기...",
+    "help": {
+      "description1": "텍스트를 Base64로 인코딩하거나 Base64 문자열을 브라우저에서 즉시 디코딩합니다.",
+      "description2": "URL 안전 Base64를 지원하며 필요에 따라 디코딩 시 공백을 무시합니다.",
+      "description3": "모든 처리는 로컬에서 이루어지며 외부 서버로 전송되지 않습니다."
+    }
+  },
+  "urlEncoder": {
+    "title": "URL 인코더 / 디코더",
+    "subtitle": "URL 및 쿼리 파라미터의 특수 문자를 안전하게 인코딩하거나 디코딩합니다.",
+    "inputLabel": "입력",
+    "outputLabel": "출력",
+    "encode": "인코딩",
+    "decode": "디코딩",
+    "clear": "지우기",
+    "copy": "복사",
+    "copied": "복사됨!",
+    "invalidInput": "유효하지 않은 URL 인코딩 입력입니다.",
+    "pastePlaceholder": "URL 또는 텍스트를 여기에 붙여넣기...",
+    "componentMode": "컴포넌트",
+    "fullUrlMode": "전체 URL",
+    "plusAsSpace": "+를 공백으로 처리",
+    "protocol": "프로토콜",
+    "host": "호스트",
+    "path": "경로",
+    "queryParams": "쿼리 파라미터",
+    "addParam": "추가",
+    "paramKey": "키",
+    "paramValue": "값",
+    "outputEmpty": "인코딩 또는 디코딩 결과가 여기에 표시됩니다.",
+    "urlBreakdown": "URL 분석",
+    "help": {
+      "description1": "encodeURIComponent로 텍스트를 퍼센트 인코딩하거나 URL 구조를 유지한 채 전체 URL을 인코딩합니다.",
+      "description2": "유효한 URL이 감지되면 프로토콜, 호스트, 경로, 쿼리 파라미터를 확인할 수 있습니다.",
+      "description3": "모든 처리는 브라우저에서 로컬로 실행되며 외부 서버로 전송되지 않습니다."
+    }
+  },
+  "markdown": {
+    "title": "Markdown 미리보기",
+    "subtitle": "Markdown을 작성하고 GitHub Flavored Markdown으로 실시간 렌더링 결과를 확인합니다.",
+    "editorLabel": "편집 (Markdown)",
+    "previewLabel": "미리보기",
+    "copy": "복사",
+    "copied": "복사됨!",
+    "clear": "지우기",
+    "loadSample": "샘플 불러오기",
+    "pastePlaceholder": "여기에 Markdown을 입력하세요...",
+    "previewEmpty": "입력하면 미리보기가 여기에 표시됩니다.",
+    "words": "단어",
+    "chars": "글자",
+    "readTime": "분",
+    "help": {
+      "description1": "GitHub Flavored Markdown을 지원하는 분할 편집기에서 즉시 HTML 미리보기를 제공합니다.",
+      "description2": "표, 작업 목록, 취소선, 코드 블록, 자동 링크를 지원합니다.",
+      "description3": "초안은 브라우저에 로컬 저장되며 외부 서버로 전송되지 않습니다."
+    },
+    "defaultContent": "## 🚀 Markdown 미리보기\n\n**GitHub Flavored Markdown**을 지원하는 실시간 미리보기 도구입니다.\n\n### 기능\n\n- 실시간 변환 ⚡️\n- 표 지원\n- 자동 링크 생성\n\n### 코드 예시\n\n```javascript\nconst greeting = \"Hello, Sparky!\";\nconsole.log(greeting);\n```\n\n### 체크리스트\n\n- [x] GFM 적용됨\n- [ ] 구문 강조 — 추후 추가\n- [ ] 내보내기 기능"
+  }
+}

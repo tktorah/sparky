@@ -1,0 +1,286 @@
+{
+  "metadata": {
+    "title": "Smart Developer Toolset | Sparky",
+    "description": "Online tools for developers. JSON, Base64, URL, JWT, UUID and more — all in one place."
+  },
+  "nav": {
+    "home": "Home",
+    "devTools": "Developer Tools"
+  },
+  "header": {
+    "searchPlaceholder": "Search tools...",
+    "collapseLabel": "Collapse sidebar",
+    "menuLabel": "Open menu",
+    "darkModeLabel": "Toggle dark mode"
+  },
+  "footer": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "contact": "Contact"
+  },
+  "home": {
+    "badge": "Free Online Utilities",
+    "heading1": "Essential Tools for",
+    "heading2": "Developers",
+    "subheading": "Secure, fast, and no installation required. All the tools you need, right in your browser.",
+    "allTools": "All Tools",
+    "toolsAvailable": "tools available",
+    "noResults": "No matching tools found.",
+    "tryIt": "Try it →"
+  },
+  "tools": [
+    {
+      "title": "JSON Formatter",
+      "description": "Format complex JSON into a readable structure and catch syntax errors easily.",
+      "href": "/en/conv/json-formatter",
+      "accent": "text-blue-500 bg-blue-50 dark:bg-blue-500/15",
+      "icon": "braces"
+    },
+    {
+      "title": "Base64 Converter",
+      "description": "Encode text or data to Base64 or decode it back to its original format.",
+      "href": "/en/conv/base64",
+      "accent": "text-cyan-500 bg-cyan-50 dark:bg-cyan-500/15",
+      "icon": "hash"
+    },
+    {
+      "title": "URL Encoder/Decoder",
+      "description": "Safely encode or decode special characters and query strings in URLs.",
+      "href": "/en/conv/url-encoder",
+      "accent": "text-teal-500 bg-teal-50 dark:bg-teal-500/15",
+      "icon": "link"
+    },
+    {
+      "title": "XML Formatter",
+      "description": "Format XML documents for readability and assist with compression or review.",
+      "href": "/en/xml-formatter",
+      "accent": "text-orange-500 bg-orange-50 dark:bg-orange-500/15",
+      "icon": "code"
+    },
+    {
+      "title": "SQL Formatter",
+      "description": "Format complex SQL queries into a readable form for easier review.",
+      "href": "/en/sql-formatter",
+      "accent": "text-indigo-500 bg-indigo-50 dark:bg-indigo-500/15",
+      "icon": "database"
+    },
+    {
+      "title": "JWT Decoder",
+      "description": "Quickly inspect the header and payload of a JSON Web Token.",
+      "href": "/en/jwt-decoder",
+      "accent": "text-yellow-500 bg-yellow-50 dark:bg-yellow-500/15",
+      "icon": "key"
+    },
+    {
+      "title": "Markdown Preview",
+      "description": "Preview your Markdown input in real time.",
+      "href": "/en/conv/markdown",
+      "accent": "text-violet-500 bg-violet-50 dark:bg-violet-500/15",
+      "icon": "type"
+    },
+    {
+      "title": "HTML Entity Converter",
+      "description": "Convert special characters to HTML entities and back.",
+      "href": "/en/html-entity",
+      "accent": "text-green-500 bg-green-50 dark:bg-green-500/15",
+      "icon": "code"
+    },
+    {
+      "title": "Hex ↔ Text Converter",
+      "description": "Mutually convert between strings and hexadecimal representation.",
+      "href": "/en/hex-text",
+      "accent": "text-slate-500 bg-slate-100 dark:bg-slate-500/15",
+      "icon": "binary"
+    },
+    {
+      "title": "Color Code Converter",
+      "description": "Switch between HEX, RGB, and HSL to inspect and pick colors.",
+      "href": "/en/color-converter",
+      "accent": "text-pink-500 bg-pink-50 dark:bg-pink-500/15",
+      "icon": "palette"
+    },
+    {
+      "title": "UUID Generator",
+      "description": "Generate as many UUID v4 values as you need and copy them instantly.",
+      "href": "/en/uuid-generator",
+      "accent": "text-sky-500 bg-sky-50 dark:bg-sky-500/15",
+      "icon": "fingerprint"
+    },
+    {
+      "title": "Hash Generator",
+      "description": "Generate MD5 and SHA hashes from input text.",
+      "href": "/en/hash-generator",
+      "accent": "text-purple-500 bg-purple-50 dark:bg-purple-500/15",
+      "icon": "hash"
+    },
+    {
+      "title": "Password Generator",
+      "description": "Create random, strong passwords with customizable options.",
+      "href": "/en/password-generator",
+      "accent": "text-red-500 bg-red-50 dark:bg-red-500/15",
+      "icon": "lock"
+    },
+    {
+      "title": "QR Code Generator",
+      "description": "Generate QR codes from URLs or text, ready to use instantly.",
+      "href": "/en/qr-generator",
+      "accent": "text-zinc-700 bg-zinc-100 dark:text-zinc-200 dark:bg-zinc-500/15",
+      "icon": "qr"
+    },
+    {
+      "title": "Lorem Ipsum Generator",
+      "description": "Generate dummy text for prototypes in the amount you need.",
+      "href": "/en/lorem-ipsum",
+      "accent": "text-violet-500 bg-violet-50 dark:bg-violet-500/15",
+      "icon": "type"
+    },
+    {
+      "title": "Unix Time Converter",
+      "description": "Convert between Unix timestamps and human-readable date/time.",
+      "href": "/en/epoch-converter",
+      "accent": "text-sky-500 bg-sky-50 dark:bg-sky-500/15",
+      "icon": "clock"
+    },
+    {
+      "title": "IP Address Lookup",
+      "description": "Check your external IP address and connection information.",
+      "href": "/en/ip-locator",
+      "accent": "text-teal-500 bg-teal-50 dark:bg-teal-500/15",
+      "icon": "link"
+    },
+    {
+      "title": "User-Agent Parser",
+      "description": "Extract OS, browser, and device information from a User-Agent string.",
+      "href": "/en/user-agent",
+      "accent": "text-fuchsia-500 bg-fuchsia-50 dark:bg-fuchsia-500/15",
+      "icon": "fingerprint"
+    },
+    {
+      "title": "Word Counter",
+      "description": "Count characters, words, lines, and bytes in real time.",
+      "href": "/en/word-counter",
+      "accent": "text-emerald-500 bg-emerald-50 dark:bg-emerald-500/15",
+      "icon": "file"
+    },
+    {
+      "title": "Case Converter",
+      "description": "Convert text to uppercase, lowercase, snake_case, camelCase, and more.",
+      "href": "/en/case-converter",
+      "accent": "text-blue-500 bg-blue-50 dark:bg-blue-500/15",
+      "icon": "case"
+    },
+    {
+      "title": "Regex Tester",
+      "description": "Enter a regular expression and instantly see match results.",
+      "href": "/en/regex-tester",
+      "accent": "text-purple-500 bg-purple-50 dark:bg-purple-500/15",
+      "icon": "searchCode"
+    },
+    {
+      "title": "Text Diff",
+      "description": "Compare two texts side-by-side and highlight the differences.",
+      "href": "/en/text-diff",
+      "accent": "text-orange-500 bg-orange-50 dark:bg-orange-500/15",
+      "icon": "split"
+    }
+  ],
+  "jsonFormatter": {
+    "title": "JSON Formatter",
+    "subtitle": "Format, validate, and minify JSON data instantly.",
+    "input": "Input",
+    "output": "Output",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "pastePlaceholder": "Paste or type JSON here...",
+    "btnFormat": "Format",
+    "btnMinify": "Minify",
+    "btnRepair": "Repair JSON",
+    "btnSort": "Sort Keys",
+    "btnIndent": "Indent",
+    "btnClear": "Clear",
+    "tabText": "Text",
+    "tabTree": "Tree",
+    "tabTypeScript": "TypeScript",
+    "tabZod": "Zod Schema",
+    "validJson": "Valid JSON",
+    "invalidJson": "Invalid JSON",
+    "repairedMsg": "JSON repaired successfully!",
+    "repairFailMsg": "Could not repair JSON"
+  },
+  "base64": {
+    "title": "Base64 Converter",
+    "subtitle": "Encode text to Base64 or decode Base64 strings instantly with UTF-8 support.",
+    "inputLabel": "Input",
+    "outputLabel": "Output",
+    "encode": "Encode",
+    "decode": "Decode",
+    "clear": "Clear",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "urlSafe": "URL-safe Base64",
+    "removePadding": "Remove padding",
+    "ignoreWhitespace": "Ignore whitespace",
+    "invalidInput": "Invalid Base64 input.",
+    "inputStats": "Input",
+    "outputStats": "Output",
+    "bytes": "bytes",
+    "chars": "chars",
+    "pastePlaceholder": "Paste text or Base64 string here...",
+    "help": {
+      "description1": "Encode text into Base64 or decode Base64 strings immediately in your browser.",
+      "description2": "Supports URL-safe Base64 and ignores whitespace when needed for robust decoding.",
+      "description3": "All processing is done locally; no data is sent to external servers."
+    }
+  },
+  "urlEncoder": {
+    "title": "URL Encoder / Decoder",
+    "subtitle": "Safely encode or decode special characters and query strings in URLs.",
+    "inputLabel": "Input",
+    "outputLabel": "Output",
+    "encode": "Encode",
+    "decode": "Decode",
+    "clear": "Clear",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "invalidInput": "Invalid URL-encoded input.",
+    "pastePlaceholder": "Paste a URL or text to encode/decode...",
+    "componentMode": "Component",
+    "fullUrlMode": "Full URL",
+    "plusAsSpace": "Treat + as space",
+    "protocol": "Protocol",
+    "host": "Host",
+    "path": "Path",
+    "queryParams": "Query Parameters",
+    "addParam": "Add",
+    "paramKey": "Key",
+    "paramValue": "Value",
+    "outputEmpty": "Encoded or decoded result appears here.",
+    "urlBreakdown": "URL Breakdown",
+    "help": {
+      "description1": "Percent-encode text with encodeURIComponent or encode full URLs while preserving structure.",
+      "description2": "Inspect protocol, host, path, and query parameters when a valid URL is detected.",
+      "description3": "All processing runs locally in your browser; nothing is sent to external servers."
+    }
+  },
+  "markdown": {
+    "title": "Markdown Preview",
+    "subtitle": "Write Markdown and see the rendered result in real time with GitHub Flavored Markdown support.",
+    "editorLabel": "Editor (Markdown)",
+    "previewLabel": "Preview",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "clear": "Clear",
+    "loadSample": "Load sample",
+    "pastePlaceholder": "Write Markdown here...",
+    "previewEmpty": "Preview appears here as you type.",
+    "words": "words",
+    "chars": "characters",
+    "readTime": "min read",
+    "help": {
+      "description1": "Live split-pane editing with instant HTML preview powered by GitHub Flavored Markdown.",
+      "description2": "Supports tables, task lists, strikethrough, fenced code blocks, and auto-linked URLs.",
+      "description3": "Your draft is saved locally in the browser; nothing is sent to external servers."
+    },
+    "defaultContent": "## 🚀 Markdown Preview\n\nA real-time previewer with **GitHub Flavored Markdown** support.\n\n### Features\n\n- Real-time conversion ⚡️\n- Table support\n- Auto-link generation\n\n### Code example\n\n```javascript\nconst greeting = \"Hello, Sparky!\";\nconsole.log(greeting);\n```\n\n### Checklist\n\n- [x] GFM enabled\n- [ ] Syntax highlighting — coming soon\n- [ ] Export feature"
+  }
+}
