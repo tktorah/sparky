@@ -25,6 +25,8 @@ export default function RootLayout({
                 var theme = localStorage.getItem('darkTheme');
                 if (theme === 'true') {
                   document.documentElement.classList.add('dark');
+                } else {
+                  document.documentElement.classList.remove('dark');
                 }
               } catch(e) {}
             })();

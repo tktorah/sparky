@@ -22,9 +22,10 @@ export function ConvLayoutClient({
   dict,
 }: ConvLayoutClientProps) {
   const [query, setQuery] = useState("");
-  // const [dark, setDark] = useState(false);
+  // const [dark, setDark] = useState(true);
   const [dark, setDark] = useState(() => {
     if (typeof window === "undefined") return false;
+    console.log("", localStorage.getItem("darkTheme") === "true")
     return localStorage.getItem("darkTheme") === "true";
   });
   const [menuOpen, setMenuOpen] = useState(false);
