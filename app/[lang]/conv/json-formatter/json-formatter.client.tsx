@@ -160,9 +160,7 @@ function TreeNode({ label, value, isLast = true }: TreeNodeProps) {
     return (
       <div className="pl-4 font-mono text-sm leading-relaxed">
         {renderKey()}
-        <span className="text-emerald-600 dark:text-emerald-400">
-          "{value}"
-        </span>
+        <span className="text-emerald-600 dark:text-emerald-400">{value}</span>
         {renderComma()}
       </div>
     );
@@ -611,19 +609,21 @@ export function JsonFormatterClient({ dict }: JsonFormatterClientProps) {
           <div className="flex-1 sm:flex-initial flex items-center gap-1.5 bg-slate-100/50 dark:bg-slate-900/50 border border-slate-200/80 dark:border-slate-700/80 p-1 rounded-xl">
             <button
               onClick={() => setIndentSize(2)}
-              className={`px-2.5 py-1 text-xs font-bold rounded-lg transition-all cursor-pointer ${indentSize === 2
+              className={`px-2.5 py-1 text-xs font-bold rounded-lg transition-all cursor-pointer ${
+                indentSize === 2
                   ? "bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-sm"
                   : "text-slate-500 hover:text-slate-700 dark:hover:text-slate-300"
-                }`}
+              }`}
             >
               2 Spaces
             </button>
             <button
               onClick={() => setIndentSize(4)}
-              className={`px-2.5 py-1 text-xs font-bold rounded-lg transition-all cursor-pointer ${indentSize === 4
+              className={`px-2.5 py-1 text-xs font-bold rounded-lg transition-all cursor-pointer ${
+                indentSize === 4
                   ? "bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-sm"
                   : "text-slate-500 hover:text-slate-700 dark:hover:text-slate-300"
-                }`}
+              }`}
             >
               4 Spaces
             </button>
@@ -713,37 +713,41 @@ export function JsonFormatterClient({ dict }: JsonFormatterClientProps) {
             <div className="flex items-center gap-1 p-1 bg-slate-100/50 dark:bg-slate-900/50 border border-slate-200/50 dark:border-slate-800/80 rounded-xl">
               <button
                 onClick={() => setOutputTab("text")}
-                className={`px-3 py-1 rounded-lg text-xs font-bold transition cursor-pointer ${outputTab === "text"
+                className={`px-3 py-1 rounded-lg text-xs font-bold transition cursor-pointer ${
+                  outputTab === "text"
                     ? "bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-sm"
                     : "text-slate-500 hover:text-slate-700 dark:hover:text-slate-300"
-                  }`}
+                }`}
               >
                 {t.tabText}
               </button>
               <button
                 onClick={() => setOutputTab("tree")}
-                className={`px-3 py-1 rounded-lg text-xs font-bold transition cursor-pointer ${outputTab === "tree"
+                className={`px-3 py-1 rounded-lg text-xs font-bold transition cursor-pointer ${
+                  outputTab === "tree"
                     ? "bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-sm"
                     : "text-slate-500 hover:text-slate-700 dark:hover:text-slate-300"
-                  }`}
+                }`}
               >
                 {t.tabTree}
               </button>
               <button
                 onClick={() => setOutputTab("typescript")}
-                className={`px-3 py-1 rounded-lg text-xs font-bold transition cursor-pointer ${outputTab === "typescript"
+                className={`px-3 py-1 rounded-lg text-xs font-bold transition cursor-pointer ${
+                  outputTab === "typescript"
                     ? "bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-sm"
                     : "text-slate-500 hover:text-slate-700 dark:hover:text-slate-300"
-                  }`}
+                }`}
               >
                 {t.tabTypeScript}
               </button>
               <button
                 onClick={() => setOutputTab("zod")}
-                className={`px-3 py-1 rounded-lg text-xs font-bold transition cursor-pointer ${outputTab === "zod"
+                className={`px-3 py-1 rounded-lg text-xs font-bold transition cursor-pointer ${
+                  outputTab === "zod"
                     ? "bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-sm"
                     : "text-slate-500 hover:text-slate-700 dark:hover:text-slate-300"
-                  }`}
+                }`}
               >
                 {t.tabZod}
               </button>
@@ -801,10 +805,11 @@ export function JsonFormatterClient({ dict }: JsonFormatterClientProps) {
       {/* Error / Alert banner notifications */}
       {infoMsg && (
         <div
-          className={`flex items-center gap-3 p-4 rounded-2xl border transition-all duration-300 ${infoMsg.type === "success"
+          className={`flex items-center gap-3 p-4 rounded-2xl border transition-all duration-300 ${
+            infoMsg.type === "success"
               ? "bg-emerald-50 dark:bg-emerald-950/20 border-emerald-200/60 dark:border-emerald-900/30 text-emerald-800 dark:text-emerald-400"
               : "bg-red-50 dark:bg-red-950/20 border-red-200/60 dark:border-red-900/30 text-red-800 dark:text-red-400"
-            }`}
+          }`}
         >
           <span className="text-lg">
             {infoMsg.type === "success" ? "✅" : "❌"}
