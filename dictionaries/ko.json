@@ -60,7 +60,7 @@
     {
       "title": "JWT 디코더",
       "description": "JSON Web Token의 헤더와 페이로드를 빠르게 확인합니다.",
-      "href": "/ko/jwt-decoder",
+      "href": "/ko/conv/jwt-decoder",
       "accent": "text-yellow-500 bg-yellow-50 dark:bg-yellow-500/15",
       "icon": "key"
     },
@@ -457,5 +457,33 @@
       "description2": "전역 검색(g) 플래그를 끄면 모든 매치를 찾는 대신 .exec()와 같은 단일 매치 동작을 테스트할 수 있습니다.",
       "description3": "모든 매칭은 사용자의 브라우저 내에서 직접 수행되며, 외부 서버로 전송되지 않습니다."
     }
+  },
+  "jwtDecoder": {
+    "title": "JWT 디코더",
+    "subtitle": "JSON Web Token의 헤더, 페이로드, 서명을 즘시 디코딩하여 확인합니다.",
+    "inputLabel": "JWT 토큰",
+    "pastePlaceholder": "JWT 토큰을 여기에 붙여넣으세요...",
+    "clear": "지우기",
+    "copy": "복사",
+    "copied": "복사되었습니다!",
+    "tabHeader": "헤더",
+    "tabPayload": "페이로드",
+    "tabSignature": "서명",
+    "signatureNote": "서명 검증은 비밀 키가 필요하며 여기서는 수행되지 않습니다.",
+    "invalidToken": "유효하지 않은 JWT 토큰입니다",
+    "emptyState": "위에 JWT 토큰을 붙여넣으면 내용을 확인할 수 있습니다.",
+    "algorithm": "알고리즘",
+    "tokenType": "타입",
+    "issuedAt": "발행 일시",
+    "expiresAt": "만료 일시",
+    "notBefore": "유효 시작 일시",
+    "expired": "만료됨",
+    "valid": "유효",
+    "subject": "주체",
+    "issuer": "발급자",
+    "audience": "대상자",
+    "loadSample": "샘플 불러오기",
+    "tokenInfo": "토큰 정보",
+    "parts": "파츠"
   }
 }

@@ -60,7 +60,7 @@
     {
       "title": "JWT デコーダー",
       "description": "JSON Web Tokenのヘッダーとペイロードをすばやく確認します。",
-      "href": "/ja/jwt-decoder",
+      "href": "/ja/conv/jwt-decoder",
       "accent": "text-yellow-500 bg-yellow-50 dark:bg-yellow-500/15",
       "icon": "key"
     },
@@ -457,5 +457,33 @@
       "description2": "グローバル(g)フラグをオフにすると、すべてのマッチを検索する代わりに .exec() のような単一マッチの挙動をテストできます。",
       "description3": "すべてのマッチングはブラウザ内でローカルに実行され、外部サーバーには送信されません。"
     }
+  },
+  "jwtDecoder": {
+    "title": "JWT デコーダー",
+    "subtitle": "JSON Web Tokenのヘッダー、ペイロード、署名をすばやくデコード・確認できます。",
+    "inputLabel": "JWT トークン",
+    "pastePlaceholder": "JWTトークンをここに貼り付けてください...",
+    "clear": "クリア",
+    "copy": "コピー",
+    "copied": "コピーしました！",
+    "tabHeader": "ヘッダー",
+    "tabPayload": "ペイロード",
+    "tabSignature": "署名",
+    "signatureNote": "署名の検証には秘密鍵が必要なため、ここでは行いません。",
+    "invalidToken": "無効なJWTトークンです",
+    "emptyState": "上にJWTトークンを貼り付けると内容を確認できます。",
+    "algorithm": "アルゴリズム",
+    "tokenType": "タイプ",
+    "issuedAt": "発行日時",
+    "expiresAt": "有効期限",
+    "notBefore": "有効開始日時",
+    "expired": "期限切れ",
+    "valid": "有効",
+    "subject": "サブジェクト",
+    "issuer": "発行者",
+    "audience": "対象者",
+    "loadSample": "サンプルを読み込む",
+    "tokenInfo": "トークン情報",
+    "parts": "パーツ"
   }
 }
