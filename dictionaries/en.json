@@ -60,7 +60,7 @@
     {
       "title": "JWT Decoder",
       "description": "Quickly inspect the header and payload of a JSON Web Token.",
-      "href": "/en/jwt-decoder",
+      "href": "/en/conv/jwt-decoder",
       "accent": "text-yellow-500 bg-yellow-50 dark:bg-yellow-500/15",
       "icon": "key"
     },
@@ -457,5 +457,33 @@
       "description2": "Turn off the Global flag to test .exec()-style single-match behavior instead of finding every match.",
       "description3": "All matching runs locally in your browser; nothing is sent to external servers."
     }
+  },
+  "jwtDecoder": {
+    "title": "JWT Decoder",
+    "subtitle": "Decode and inspect the Header, Payload, and Signature of any JSON Web Token instantly.",
+    "inputLabel": "JWT Token",
+    "pastePlaceholder": "Paste your JWT token here...",
+    "clear": "Clear",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "tabHeader": "Header",
+    "tabPayload": "Payload",
+    "tabSignature": "Signature",
+    "signatureNote": "Signature verification requires the secret key and is not performed here.",
+    "invalidToken": "Invalid JWT token",
+    "emptyState": "Paste a JWT token above to inspect its contents.",
+    "algorithm": "Algorithm",
+    "tokenType": "Type",
+    "issuedAt": "Issued At",
+    "expiresAt": "Expires At",
+    "notBefore": "Not Before",
+    "expired": "Expired",
+    "valid": "Valid",
+    "subject": "Subject",
+    "issuer": "Issuer",
+    "audience": "Audience",
+    "loadSample": "Load Sample",
+    "tokenInfo": "Token Info",
+    "parts": "parts"
   }
 }
