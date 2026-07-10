@@ -51,23 +51,16 @@
       "icon": "link"
     },
     {
-      "title": "XML 포매터",
-      "description": "XML 문서를 보기 좋게 정렬하여 검토 및 압축 작업을 도와줍니다.",
-      "href": "/ko/xml-formatter",
-      "accent": "text-orange-500 bg-orange-50 dark:bg-orange-500/15",
-      "icon": "code"
-    },
-    {
       "title": "SQL 포매터",
       "description": "복잡한 SQL 쿼리를 읽기 쉬운 형태로 정리하여 리뷰하기 쉽게 합니다.",
-      "href": "/ko/sql-formatter",
+      "href": "/ko/conv/sql-formatter",
       "accent": "text-indigo-500 bg-indigo-50 dark:bg-indigo-500/15",
       "icon": "database"
     },
     {
       "title": "JWT 디코더",
       "description": "JSON Web Token의 헤더와 페이로드를 빠르게 확인합니다.",
-      "href": "/ko/conv/jwt-decoder",
+      "href": "/ko/jwt-decoder",
       "accent": "text-yellow-500 bg-yellow-50 dark:bg-yellow-500/15",
       "icon": "key"
     },
@@ -114,13 +107,6 @@
       "icon": "hash"
     },
     {
-      "title": "비밀번호 생성기",
-      "description": "조건을 조정하여 무작위의 강력한 비밀번호를 생성합니다.",
-      "href": "/ko/password-generator",
-      "accent": "text-red-500 bg-red-50 dark:bg-red-500/15",
-      "icon": "lock"
-    },
-    {
       "title": "QR 코드 생성기",
       "description": "URL이나 텍스트에서 QR 코드를 생성하여 즉시 사용할 수 있습니다.",
       "href": "/ko/conv/qr-generator",
@@ -128,16 +114,9 @@
       "icon": "qr"
     },
     {
-      "title": "Lorem Ipsum 생성기",
-      "description": "프로토타입용 더미 텍스트를 원하는 양만큼 생성합니다.",
-      "href": "/ko/lorem-ipsum",
-      "accent": "text-violet-500 bg-violet-50 dark:bg-violet-500/15",
-      "icon": "type"
-    },
-    {
       "title": "Unix 시간 변환",
       "description": "Unix 타임스탬프와 일반 날짜/시간을 상호 변환합니다.",
-      "href": "/ko/epoch-converter",
+      "href": "/ko/conv/epoch-converter",
       "accent": "text-sky-500 bg-sky-50 dark:bg-sky-500/15",
       "icon": "clock"
     },
@@ -151,7 +130,7 @@
     {
       "title": "User-Agent 파서",
       "description": "User-Agent 문자열에서 OS, 브라우저, 디바이스 정보를 추출합니다.",
-      "href": "/ko/user-agent",
+      "href": "/ko/conv/user-agent",
       "accent": "text-fuchsia-500 bg-fuchsia-50 dark:bg-fuchsia-500/15",
       "icon": "fingerprint"
     },
@@ -172,7 +151,7 @@
     {
       "title": "정규식 테스터",
       "description": "정규식을 입력하고 매칭 결과를 즉시 확인할 수 있습니다.",
-      "href": "/ko/regex-tester",
+      "href": "/ko/conv/regex-tester",
       "accent": "text-purple-500 bg-purple-50 dark:bg-purple-500/15",
       "icon": "searchCode"
     },
@@ -262,34 +241,6 @@
       "description3": "모든 처리는 브라우저에서 로컬로 실행되며 외부 서버로 전송되지 않습니다."
     }
   },
-  "jwtDecoder": {
-    "title": "JWT 디코더",
-    "subtitle": "JSON Web Token의 헤더, 페이로드, 서명을 즘시 디코딩하여 확인합니다.",
-    "inputLabel": "JWT 토큰",
-    "pastePlaceholder": "JWT 토큰을 여기에 붙여넣으세요...",
-    "clear": "지우기",
-    "copy": "복사",
-    "copied": "복사되었습니다!",
-    "tabHeader": "헤더",
-    "tabPayload": "페이로드",
-    "tabSignature": "서명",
-    "signatureNote": "서명 검증은 비밀 키가 필요하며 여기서는 수행되지 않습니다.",
-    "invalidToken": "유효하지 않은 JWT 토큰입니다",
-    "emptyState": "위에 JWT 토큰을 붙여넣으면 내용을 확인할 수 있습니다.",
-    "algorithm": "알고리즘",
-    "tokenType": "타입",
-    "issuedAt": "발행 일시",
-    "expiresAt": "만료 일시",
-    "notBefore": "유효 시작 일시",
-    "expired": "만료됨",
-    "valid": "유효",
-    "subject": "주체",
-    "issuer": "발급자",
-    "audience": "대상자",
-    "loadSample": "샘플 불러오기",
-    "tokenInfo": "토큰 정보",
-    "parts": "파츠"
-  },
   "markdown": {
     "title": "Markdown 미리보기",
     "subtitle": "Markdown을 작성하고 GitHub Flavored Markdown으로 실시간 렌더링 결과를 확인합니다.",
@@ -310,6 +261,114 @@
       "description3": "초안은 브라우저에 로컬 저장되며 외부 서버로 전송되지 않습니다."
     },
     "defaultContent": "## 🚀 Markdown 미리보기\n\n**GitHub Flavored Markdown**을 지원하는 실시간 미리보기 도구입니다.\n\n### 기능\n\n- 실시간 변환 ⚡️\n- 표 지원\n- 자동 링크 생성\n\n### 코드 예시\n\n```javascript\nconst greeting = \"Hello, Sparky!\";\nconsole.log(greeting);\n```\n\n### 체크리스트\n\n- [x] GFM 적용됨\n- [ ] 구문 강조 — 추후 추가\n- [ ] 내보내기 기능"
+  },
+  "epochConverter": {
+    "title": "Unix 시간 변환기",
+    "subtitle": "Unix 타임스탬프를 사람이 읽을 수 있는 날짜로, 또는 그 반대로 변환합니다. 실시간 시계와 로컬/UTC 시간을 함께 제공합니다.",
+    "liveClock": "실시간 Unix 시계",
+    "currentSeconds": "초",
+    "currentMilliseconds": "밀리초",
+    "toDateTitle": "타임스탬프 → 날짜",
+    "toDateSubtitle": "Unix 타임스탬프를 입력하면 날짜와 시간으로 변환합니다.",
+    "timestampLabel": "Unix 타임스탬프",
+    "timestampPlaceholder": "예: 1700000000 또는 1700000000000",
+    "unit": "단위",
+    "unitAuto": "자동",
+    "unitSeconds": "초",
+    "unitMilliseconds": "밀리초",
+    "now": "현재 시간 사용",
+    "clear": "지우기",
+    "localTime": "로컬 시간",
+    "utcTime": "UTC (GMT)",
+    "isoFormat": "ISO 8601",
+    "relativeTime": "상대 시간",
+    "invalidTimestamp": "유효하지 않은 타임스탬프입니다",
+    "toDateEmptyState": "위에 Unix 타임스탬프를 입력하면 변환된 날짜를 확인할 수 있습니다.",
+    "toTimestampTitle": "날짜 → 타임스탬프",
+    "toTimestampSubtitle": "날짜와 시간을 설정하면 Unix 타임스탬프로 변환합니다.",
+    "year": "년",
+    "month": "월",
+    "day": "일",
+    "hour": "시",
+    "minute": "분",
+    "second": "초",
+    "timezone": "시간대",
+    "timezoneLocal": "로컬",
+    "timezoneUtc": "UTC",
+    "resultSeconds": "타임스탬프 (초)",
+    "resultMilliseconds": "타임스탬프 (밀리초)",
+    "copy": "복사",
+    "copied": "복사되었습니다!",
+    "help": {
+      "description1": "Unix 시간은 1970년 1월 1일 00:00:00 UTC(유닉스 에포크)부터 경과한 초를 나타냅니다.",
+      "description2": "10자리 숫자는 초 단위로, 13자리 숫자는 밀리초 단위로 자동 판별됩니다.",
+      "description3": "모든 연산은 사용자의 브라우저 내에서 직접 수행되며, 외부 서버로 전송되지 않습니다."
+    }
+  },
+  "userAgent": {
+    "title": "User-Agent 파서",
+    "subtitle": "User-Agent 문자열을 분석하여 브라우저, 운영체제, 기기 종류, 렌더링 엔진을 식별합니다.",
+    "inputLabel": "User-Agent 문자열",
+    "pastePlaceholder": "User-Agent 문자열을 여기에 붙여넣으세요...",
+    "useMyBrowser": "내 브라우저 확인",
+    "clear": "지우기",
+    "copy": "복사",
+    "copied": "복사되었습니다!",
+    "emptyState": "위에 User-Agent 문자열을 붙여넣거나 내 브라우저 정보를 사용하면 분석 결과를 확인할 수 있습니다.",
+    "os": "운영체제",
+    "browser": "브라우저",
+    "device": "기기",
+    "engine": "엔진",
+    "version": "버전",
+    "deviceDesktop": "데스크톱",
+    "deviceMobile": "모바일",
+    "deviceTablet": "태블릿",
+    "deviceTv": "스마트 TV",
+    "deviceBot": "봇 / 크롤러",
+    "deviceUnknown": "알 수 없음",
+    "unknown": "알 수 없음",
+    "help": {
+      "description1": "User-Agent 문자열은 조작될 수 있으므로 보안 목적으로는 신뢰해서는 안 됩니다.",
+      "description2": "대부분의 User-Agent 문자열은 과거 호환성 때문에 여전히 \"Mozilla/5.0\"으로 시작합니다.",
+      "description3": "모든 분석은 사용자의 브라우저 내에서 직접 수행되며, 외부 서버로 전송되지 않습니다."
+    }
+  },
+  "sqlFormatter": {
+    "title": "SQL 포매터",
+    "subtitle": "복잡하고 읽기 어려운 SQL 쿼리를 일관된 들여쓰기로 정렬합니다.",
+    "inputLabel": "SQL 쿼리",
+    "pastePlaceholder": "SQL 쿼리를 여기에 붙여넣으세요...",
+    "outputLabel": "정렬된 SQL",
+    "outputEmpty": "정렬된 SQL이 여기에 표시됩니다.",
+    "clear": "지우기",
+    "copy": "복사",
+    "copied": "복사되었습니다!",
+    "dialect": "SQL 방언",
+    "dialectStandard": "표준 SQL",
+    "dialectMariadb": "MariaDB",
+    "dialectMysql": "MySQL",
+    "dialectPostgresql": "PostgreSQL",
+    "dialectSqlite": "SQLite",
+    "dialectBigquery": "BigQuery",
+    "dialectDb2": "DB2",
+    "dialectHive": "Hive",
+    "dialectPlsql": "PL/SQL",
+    "dialectRedshift": "Redshift",
+    "dialectSnowflake": "Snowflake",
+    "dialectTsql": "T-SQL",
+    "indentSize": "들여쓰기 크기",
+    "keywordCase": "키워드 대소문자",
+    "identifierCase": "식별자 대소문자",
+    "caseUpper": "대문자",
+    "caseLower": "소문자",
+    "casePreserve": "원본 유지",
+    "useTabs": "탭 사용",
+    "invalidInput": "이 쿼리를 정렬할 수 없습니다. 구문 오류를 확인하세요.",
+    "help": {
+      "description1": "표준 SQL은 물론 MySQL, PostgreSQL, T-SQL, Snowflake, BigQuery 등 다양한 방언을 지원합니다.",
+      "description2": "들여쓰기 크기, 탭/스페이스, 키워드·식별자 대소문자를 팀의 스타일에 맞게 조정할 수 있습니다.",
+      "description3": "모든 정렬은 사용자의 브라우저 내에서 직접 수행되며, 외부 서버로 전송되지 않습니다."
+    }
   },
   "qrGenerator": {
     "title": "QR 코드 생성기",
@@ -356,5 +415,47 @@
     "errorLevelM": "M — 15%",
     "errorLevelQ": "Q — 25%",
     "errorLevelH": "H — 30%"
+  },
+  "regexTester": {
+    "title": "정규표현식 테스터",
+    "subtitle": "정규표현식을 테스트 문자열에 실시간으로 매칭하고, 매치 하이라이트·캡처 그룹·코드 스니펫까지 확인합니다.",
+    "patternLabel": "정규표현식",
+    "patternPlaceholder": "패턴을 입력하세요. 예: \\b[A-Za-z]+\\b",
+    "flags": "플래그",
+    "flagGlobal": "전역 검색 (g)",
+    "flagIgnoreCase": "대소문자 무시 (i)",
+    "flagMultiline": "다중 행 (m)",
+    "flagDotAll": "점 전체 일치 (s)",
+    "flagUnicode": "유니코드 (u)",
+    "presets": "프리셋",
+    "presetEmail": "이메일",
+    "presetUrl": "URL",
+    "presetIpv4": "IPv4 주소",
+    "presetDate": "날짜 (YYYY-MM-DD)",
+    "presetPhone": "전화번호",
+    "presetPassword": "강력한 비밀번호",
+    "presetUuid": "UUID",
+    "testStringLabel": "테스트 문자열",
+    "testStringPlaceholder": "패턴과 매칭할 텍스트를 입력하세요...",
+    "charCount": "자",
+    "matchesLabel": "매칭 결과",
+    "noMatches": "일치하는 결과가 없습니다.",
+    "match": "매치",
+    "group": "그룹",
+    "replacementLabel": "치환 문자열",
+    "replacementPlaceholder": "캡처 그룹을 참조하려면 $1, $2를 사용하세요...",
+    "resultLabel": "치환 결과",
+    "resultEmpty": "치환 결과가 여기에 표시됩니다.",
+    "codeSnippet": "코드 스니펫",
+    "clear": "지우기",
+    "copy": "복사",
+    "copied": "복사되었습니다!",
+    "invalidRegex": "유효하지 않은 정규표현식입니다",
+    "emptyState": "위에 패턴과 테스트 문자열을 입력하면 매칭 결과를 확인할 수 있습니다.",
+    "help": {
+      "description1": "매칭은 브라우저에서 실행 중인 것과 동일한 JavaScript RegExp 엔진을 사용합니다.",
+      "description2": "전역 검색(g) 플래그를 끄면 모든 매치를 찾는 대신 .exec()와 같은 단일 매치 동작을 테스트할 수 있습니다.",
+      "description3": "모든 매칭은 사용자의 브라우저 내에서 직접 수행되며, 외부 서버로 전송되지 않습니다."
+    }
   }
 }

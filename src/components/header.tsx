@@ -138,14 +138,14 @@ export function Header({
         <div className="relative" ref={langMenuRef}>
           <button
             id="lang-switcher"
-            className="hidden h-11 items-center justify-center gap-2 rounded-full border border-slate-200/80 bg-white/75 px-4 text-sm font-bold text-slate-700 transition hover:border-blue-300 md:inline-flex dark:border-slate-700/80 dark:bg-slate-800/75 dark:text-slate-100"
+            className="hidden h-11 items-center justify-center gap-2 rounded-full border border-slate-200/80 bg-white/75 px-4 text-sm font-bold text-slate-700 transition hover:border-blue-300 inline-flex dark:border-slate-700/80 dark:bg-slate-800/75 dark:text-slate-100"
             type="button"
             aria-haspopup="listbox"
             aria-expanded={langMenuOpen}
             onClick={() => setLangMenuOpen((v) => !v)}
           >
             <span>{localeFlags[lang]}</span>
-            <span>{localeNames[lang]}</span>
+            <span className="hidden sm:inline">{localeNames[lang]}</span>
             <svg
               aria-hidden="true"
               className={`h-3.5 w-3.5 transition ${langMenuOpen ? "rotate-180" : ""}`}

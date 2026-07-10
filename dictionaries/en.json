@@ -51,23 +51,16 @@
       "icon": "link"
     },
     {
-      "title": "XML Formatter",
-      "description": "Format XML documents for readability and assist with compression or review.",
-      "href": "/en/xml-formatter",
-      "accent": "text-orange-500 bg-orange-50 dark:bg-orange-500/15",
-      "icon": "code"
-    },
-    {
       "title": "SQL Formatter",
       "description": "Format complex SQL queries into a readable form for easier review.",
-      "href": "/en/sql-formatter",
+      "href": "/en/conv/sql-formatter",
       "accent": "text-indigo-500 bg-indigo-50 dark:bg-indigo-500/15",
       "icon": "database"
     },
     {
       "title": "JWT Decoder",
       "description": "Quickly inspect the header and payload of a JSON Web Token.",
-      "href": "/en/conv/jwt-decoder",
+      "href": "/en/jwt-decoder",
       "accent": "text-yellow-500 bg-yellow-50 dark:bg-yellow-500/15",
       "icon": "key"
     },
@@ -114,13 +107,6 @@
       "icon": "hash"
     },
     {
-      "title": "Password Generator",
-      "description": "Create random, strong passwords with customizable options.",
-      "href": "/en/password-generator",
-      "accent": "text-red-500 bg-red-50 dark:bg-red-500/15",
-      "icon": "lock"
-    },
-    {
       "title": "QR Code Generator",
       "description": "Generate QR codes from URLs or text, ready to use instantly.",
       "href": "/en/conv/qr-generator",
@@ -128,16 +114,9 @@
       "icon": "qr"
     },
     {
-      "title": "Lorem Ipsum Generator",
-      "description": "Generate dummy text for prototypes in the amount you need.",
-      "href": "/en/lorem-ipsum",
-      "accent": "text-violet-500 bg-violet-50 dark:bg-violet-500/15",
-      "icon": "type"
-    },
-    {
       "title": "Unix Time Converter",
       "description": "Convert between Unix timestamps and human-readable date/time.",
-      "href": "/en/epoch-converter",
+      "href": "/en/conv/epoch-converter",
       "accent": "text-sky-500 bg-sky-50 dark:bg-sky-500/15",
       "icon": "clock"
     },
@@ -151,7 +130,7 @@
     {
       "title": "User-Agent Parser",
       "description": "Extract OS, browser, and device information from a User-Agent string.",
-      "href": "/en/user-agent",
+      "href": "/en/conv/user-agent",
       "accent": "text-fuchsia-500 bg-fuchsia-50 dark:bg-fuchsia-500/15",
       "icon": "fingerprint"
     },
@@ -172,7 +151,7 @@
     {
       "title": "Regex Tester",
       "description": "Enter a regular expression and instantly see match results.",
-      "href": "/en/regex-tester",
+      "href": "/en/conv/regex-tester",
       "accent": "text-purple-500 bg-purple-50 dark:bg-purple-500/15",
       "icon": "searchCode"
     },
@@ -262,34 +241,6 @@
       "description3": "All processing runs locally in your browser; nothing is sent to external servers."
     }
   },
-  "jwtDecoder": {
-    "title": "JWT Decoder",
-    "subtitle": "Decode and inspect the Header, Payload, and Signature of any JSON Web Token instantly.",
-    "inputLabel": "JWT Token",
-    "pastePlaceholder": "Paste your JWT token here...",
-    "clear": "Clear",
-    "copy": "Copy",
-    "copied": "Copied!",
-    "tabHeader": "Header",
-    "tabPayload": "Payload",
-    "tabSignature": "Signature",
-    "signatureNote": "Signature verification requires the secret key and is not performed here.",
-    "invalidToken": "Invalid JWT token",
-    "emptyState": "Paste a JWT token above to inspect its contents.",
-    "algorithm": "Algorithm",
-    "tokenType": "Type",
-    "issuedAt": "Issued At",
-    "expiresAt": "Expires At",
-    "notBefore": "Not Before",
-    "expired": "Expired",
-    "valid": "Valid",
-    "subject": "Subject",
-    "issuer": "Issuer",
-    "audience": "Audience",
-    "loadSample": "Load Sample",
-    "tokenInfo": "Token Info",
-    "parts": "parts"
-  },
   "markdown": {
     "title": "Markdown Preview",
     "subtitle": "Write Markdown and see the rendered result in real time with GitHub Flavored Markdown support.",
@@ -310,6 +261,114 @@
       "description3": "Your draft is saved locally in the browser; nothing is sent to external servers."
     },
     "defaultContent": "## 🚀 Markdown Preview\n\nA real-time previewer with **GitHub Flavored Markdown** support.\n\n### Features\n\n- Real-time conversion ⚡️\n- Table support\n- Auto-link generation\n\n### Code example\n\n```javascript\nconst greeting = \"Hello, Sparky!\";\nconsole.log(greeting);\n```\n\n### Checklist\n\n- [x] GFM enabled\n- [ ] Syntax highlighting — coming soon\n- [ ] Export feature"
+  },
+  "epochConverter": {
+    "title": "Unix Time Converter",
+    "subtitle": "Convert Unix timestamps to human-readable dates and back, with a live clock and local/UTC output.",
+    "liveClock": "Live Unix Clock",
+    "currentSeconds": "Seconds",
+    "currentMilliseconds": "Milliseconds",
+    "toDateTitle": "Timestamp → Date",
+    "toDateSubtitle": "Enter a Unix timestamp to convert it to a date and time.",
+    "timestampLabel": "Unix Timestamp",
+    "timestampPlaceholder": "e.g. 1700000000 or 1700000000000",
+    "unit": "Unit",
+    "unitAuto": "Auto",
+    "unitSeconds": "Seconds",
+    "unitMilliseconds": "Milliseconds",
+    "now": "Use Current Time",
+    "clear": "Clear",
+    "localTime": "Local Time",
+    "utcTime": "UTC (GMT)",
+    "isoFormat": "ISO 8601",
+    "relativeTime": "Relative",
+    "invalidTimestamp": "Invalid timestamp",
+    "toDateEmptyState": "Enter a Unix timestamp above to see the converted date.",
+    "toTimestampTitle": "Date → Timestamp",
+    "toTimestampSubtitle": "Set a date and time to convert it to a Unix timestamp.",
+    "year": "Year",
+    "month": "Month",
+    "day": "Day",
+    "hour": "Hour",
+    "minute": "Minute",
+    "second": "Second",
+    "timezone": "Timezone",
+    "timezoneLocal": "Local",
+    "timezoneUtc": "UTC",
+    "resultSeconds": "Timestamp (seconds)",
+    "resultMilliseconds": "Timestamp (milliseconds)",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "help": {
+      "description1": "Unix time counts the seconds elapsed since 00:00:00 UTC on January 1, 1970 (the Unix Epoch).",
+      "description2": "10-digit numbers are treated as seconds and 13-digit numbers as milliseconds — the unit is detected automatically.",
+      "description3": "All processing runs locally in your browser; nothing is sent to external servers."
+    }
+  },
+  "userAgent": {
+    "title": "User-Agent Parser",
+    "subtitle": "Parse a User-Agent string to identify the browser, operating system, device type, and rendering engine.",
+    "inputLabel": "User-Agent String",
+    "pastePlaceholder": "Paste a User-Agent string here...",
+    "useMyBrowser": "Use My Browser",
+    "clear": "Clear",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "emptyState": "Paste a User-Agent string above, or use your own browser's string, to see the parsed result.",
+    "os": "Operating System",
+    "browser": "Browser",
+    "device": "Device",
+    "engine": "Engine",
+    "version": "Version",
+    "deviceDesktop": "Desktop",
+    "deviceMobile": "Mobile",
+    "deviceTablet": "Tablet",
+    "deviceTv": "Smart TV",
+    "deviceBot": "Bot / Crawler",
+    "deviceUnknown": "Unknown",
+    "unknown": "Unknown",
+    "help": {
+      "description1": "User-Agent strings can be spoofed, so they should never be relied on for security decisions.",
+      "description2": "Most User-Agent strings still start with \"Mozilla/5.0\" for historical compatibility reasons.",
+      "description3": "All parsing runs locally in your browser; nothing is sent to external servers."
+    }
+  },
+  "sqlFormatter": {
+    "title": "SQL Formatter",
+    "subtitle": "Format messy SQL queries into a readable, consistently indented form.",
+    "inputLabel": "SQL Query",
+    "pastePlaceholder": "Paste your SQL query here...",
+    "outputLabel": "Formatted SQL",
+    "outputEmpty": "Formatted SQL will appear here.",
+    "clear": "Clear",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "dialect": "Dialect",
+    "dialectStandard": "Standard SQL",
+    "dialectMariadb": "MariaDB",
+    "dialectMysql": "MySQL",
+    "dialectPostgresql": "PostgreSQL",
+    "dialectSqlite": "SQLite",
+    "dialectBigquery": "BigQuery",
+    "dialectDb2": "DB2",
+    "dialectHive": "Hive",
+    "dialectPlsql": "PL/SQL",
+    "dialectRedshift": "Redshift",
+    "dialectSnowflake": "Snowflake",
+    "dialectTsql": "T-SQL",
+    "indentSize": "Indent Size",
+    "keywordCase": "Keyword Case",
+    "identifierCase": "Identifier Case",
+    "caseUpper": "UPPER",
+    "caseLower": "lower",
+    "casePreserve": "Preserve",
+    "useTabs": "Use tabs",
+    "invalidInput": "Could not format this query. Check for syntax errors.",
+    "help": {
+      "description1": "Supports Standard SQL as well as MySQL, PostgreSQL, T-SQL, Snowflake, BigQuery and other common dialects.",
+      "description2": "Adjust indent size, tabs vs. spaces, and keyword/identifier casing to match your team's style.",
+      "description3": "All formatting runs locally in your browser; nothing is sent to external servers."
+    }
   },
   "qrGenerator": {
     "title": "QR Code Generator",
@@ -356,5 +415,47 @@
     "errorLevelM": "M — 15%",
     "errorLevelQ": "Q — 25%",
     "errorLevelH": "H — 30%"
+  },
+  "regexTester": {
+    "title": "Regex Tester",
+    "subtitle": "Test regular expressions against sample text in real time, with match highlighting, capture groups, and code snippets.",
+    "patternLabel": "Regular Expression",
+    "patternPlaceholder": "Enter a pattern, e.g. \\b[A-Za-z]+\\b",
+    "flags": "Flags",
+    "flagGlobal": "Global (g)",
+    "flagIgnoreCase": "Ignore Case (i)",
+    "flagMultiline": "Multiline (m)",
+    "flagDotAll": "Dot All (s)",
+    "flagUnicode": "Unicode (u)",
+    "presets": "Presets",
+    "presetEmail": "Email",
+    "presetUrl": "URL",
+    "presetIpv4": "IPv4 Address",
+    "presetDate": "Date (YYYY-MM-DD)",
+    "presetPhone": "Phone Number",
+    "presetPassword": "Strong Password",
+    "presetUuid": "UUID",
+    "testStringLabel": "Test String",
+    "testStringPlaceholder": "Enter text to test against your pattern...",
+    "charCount": "chars",
+    "matchesLabel": "Matches",
+    "noMatches": "No matches found.",
+    "match": "Match",
+    "group": "Group",
+    "replacementLabel": "Replacement",
+    "replacementPlaceholder": "Use $1, $2 to refer to capture groups...",
+    "resultLabel": "Replacement Result",
+    "resultEmpty": "The replacement result will appear here.",
+    "codeSnippet": "Code Snippet",
+    "clear": "Clear",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "invalidRegex": "Invalid regular expression",
+    "emptyState": "Enter a pattern and a test string above to see match results.",
+    "help": {
+      "description1": "Matching uses the JavaScript RegExp engine, the same one running in your browser.",
+      "description2": "Turn off the Global flag to test .exec()-style single-match behavior instead of finding every match.",
+      "description3": "All matching runs locally in your browser; nothing is sent to external servers."
+    }
   }
 }
