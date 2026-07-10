@@ -51,23 +51,16 @@
       "icon": "link"
     },
     {
-      "title": "XML フォーマッター",
-      "description": "XMLドキュメントを見やすく整形し、圧縮や確認作業を助けます。",
-      "href": "/ja/xml-formatter",
-      "accent": "text-orange-500 bg-orange-50 dark:bg-orange-500/15",
-      "icon": "code"
-    },
-    {
       "title": "SQL フォーマッター",
       "description": "複雑なSQLクエリを読みやすい形に整えてレビューしやすくします。",
-      "href": "/ja/sql-formatter",
+      "href": "/ja/conv/sql-formatter",
       "accent": "text-indigo-500 bg-indigo-50 dark:bg-indigo-500/15",
       "icon": "database"
     },
     {
       "title": "JWT デコーダー",
       "description": "JSON Web Tokenのヘッダーとペイロードをすばやく確認します。",
-      "href": "/ja/conv/jwt-decoder",
+      "href": "/ja/jwt-decoder",
       "accent": "text-yellow-500 bg-yellow-50 dark:bg-yellow-500/15",
       "icon": "key"
     },
@@ -114,13 +107,6 @@
       "icon": "hash"
     },
     {
-      "title": "パスワード生成",
-      "description": "条件を調整してランダムで強力なパスワードを作成します。",
-      "href": "/ja/password-generator",
-      "accent": "text-red-500 bg-red-50 dark:bg-red-500/15",
-      "icon": "lock"
-    },
-    {
       "title": "QR コード生成",
       "description": "URLやテキストからQRコードを作り、すぐ利用できる形にします。",
       "href": "/ja/conv/qr-generator",
@@ -128,16 +114,9 @@
       "icon": "qr"
     },
     {
-      "title": "Lorem Ipsum 生成",
-      "description": "プロトタイプ用のダミーテキストを分量に合わせて生成します。",
-      "href": "/ja/lorem-ipsum",
-      "accent": "text-violet-500 bg-violet-50 dark:bg-violet-500/15",
-      "icon": "type"
-    },
-    {
       "title": "Unix 時間変換",
       "description": "Unixタイムスタンプと通常日時を相互変換できます。",
-      "href": "/ja/epoch-converter",
+      "href": "/ja/conv/epoch-converter",
       "accent": "text-sky-500 bg-sky-50 dark:bg-sky-500/15",
       "icon": "clock"
     },
@@ -151,7 +130,7 @@
     {
       "title": "User-Agent パーサー",
       "description": "User-Agent文字列からOS、ブラウザ、デバイス情報を読み取ります。",
-      "href": "/ja/user-agent",
+      "href": "/ja/conv/user-agent",
       "accent": "text-fuchsia-500 bg-fuchsia-50 dark:bg-fuchsia-500/15",
       "icon": "fingerprint"
     },
@@ -172,7 +151,7 @@
     {
       "title": "正規表現テスター",
       "description": "正規表現を入力してマッチ結果をすぐに確認できます。",
-      "href": "/ja/regex-tester",
+      "href": "/ja/conv/regex-tester",
       "accent": "text-purple-500 bg-purple-50 dark:bg-purple-500/15",
       "icon": "searchCode"
     },
@@ -262,34 +241,6 @@
       "description3": "すべての処理はブラウザ内でローカルに実行され、外部サーバーには送信されません。"
     }
   },
-  "jwtDecoder": {
-    "title": "JWT デコーダー",
-    "subtitle": "JSON Web Tokenのヘッダー、ペイロード、署名をすばやくデコード・確認できます。",
-    "inputLabel": "JWT トークン",
-    "pastePlaceholder": "JWTトークンをここに貼り付けてください...",
-    "clear": "クリア",
-    "copy": "コピー",
-    "copied": "コピーしました！",
-    "tabHeader": "ヘッダー",
-    "tabPayload": "ペイロード",
-    "tabSignature": "署名",
-    "signatureNote": "署名の検証には秘密鍵が必要なため、ここでは行いません。",
-    "invalidToken": "無効なJWTトークンです",
-    "emptyState": "上にJWTトークンを貼り付けると内容を確認できます。",
-    "algorithm": "アルゴリズム",
-    "tokenType": "タイプ",
-    "issuedAt": "発行日時",
-    "expiresAt": "有効期限",
-    "notBefore": "有効開始日時",
-    "expired": "期限切れ",
-    "valid": "有効",
-    "subject": "サブジェクト",
-    "issuer": "発行者",
-    "audience": "対象者",
-    "loadSample": "サンプルを読み込む",
-    "tokenInfo": "トークン情報",
-    "parts": "パーツ"
-  },
   "markdown": {
     "title": "Markdown プレビュー",
     "subtitle": "Markdown を書いてリアルタイムでレンダリング結果を確認します。GitHub Flavored Markdown に対応。",
@@ -310,6 +261,114 @@
       "description3": "下書きはブラウザにローカル保存され、外部サーバーには送信されません。"
     },
     "defaultContent": "## 🚀 Markdown プレビュー\n\n**GitHub Flavored Markdown** をサポートするリアルタイムプレビューアです。\n\n### 特徴 (Features)\n\n- リアルタイム変換 ⚡️\n- テーブルのサポート\n- 自動リンク生成\n\n### コード例\n\n```javascript\nconst greeting = \"Hello, Sparky!\";\nconsole.log(greeting);\n```\n\n### チェックリスト\n\n- [x] GFM 適用済み\n- [ ] シンタックスハイライト — 後で追加予定\n- [ ] エクスポート機能"
+  },
+  "epochConverter": {
+    "title": "Unix時間変換ツール",
+    "subtitle": "Unixタイムスタンプを人が読める日時に、またはその逆に変換します。リアルタイムの時計とローカル/UTC表示に対応しています。",
+    "liveClock": "リアルタイムUnix時計",
+    "currentSeconds": "秒",
+    "currentMilliseconds": "ミリ秒",
+    "toDateTitle": "タイムスタンプ → 日時",
+    "toDateSubtitle": "Unixタイムスタンプを入力すると日時に変換します。",
+    "timestampLabel": "Unixタイムスタンプ",
+    "timestampPlaceholder": "例: 1700000000 または 1700000000000",
+    "unit": "単位",
+    "unitAuto": "自動",
+    "unitSeconds": "秒",
+    "unitMilliseconds": "ミリ秒",
+    "now": "現在時刻を使用",
+    "clear": "クリア",
+    "localTime": "ローカル時刻",
+    "utcTime": "UTC（GMT）",
+    "isoFormat": "ISO 8601",
+    "relativeTime": "相対時間",
+    "invalidTimestamp": "無効なタイムスタンプです",
+    "toDateEmptyState": "上にUnixタイムスタンプを入力すると変換結果が表示されます。",
+    "toTimestampTitle": "日時 → タイムスタンプ",
+    "toTimestampSubtitle": "日時を設定するとUnixタイムスタンプに変換します。",
+    "year": "年",
+    "month": "月",
+    "day": "日",
+    "hour": "時",
+    "minute": "分",
+    "second": "秒",
+    "timezone": "タイムゾーン",
+    "timezoneLocal": "ローカル",
+    "timezoneUtc": "UTC",
+    "resultSeconds": "タイムスタンプ（秒）",
+    "resultMilliseconds": "タイムスタンプ（ミリ秒）",
+    "copy": "コピー",
+    "copied": "コピーしました！",
+    "help": {
+      "description1": "Unix時間は1970年1月1日00:00:00 UTC（Unixエポック）からの経過秒数を表します。",
+      "description2": "10桁の数値は秒、13桁の数値はミリ秒として自動的に判別されます。",
+      "description3": "すべての処理はブラウザ内でローカルに実行され、外部サーバーには送信されません。"
+    }
+  },
+  "userAgent": {
+    "title": "User-Agentパーサー",
+    "subtitle": "User-Agent文字列を解析してブラウザ、OS、デバイスの種類、レンダリングエンジンを識別します。",
+    "inputLabel": "User-Agent文字列",
+    "pastePlaceholder": "User-Agent文字列をここに貼り付けてください...",
+    "useMyBrowser": "自分のブラウザを確認",
+    "clear": "クリア",
+    "copy": "コピー",
+    "copied": "コピーしました！",
+    "emptyState": "上にUser-Agent文字列を貼り付けるか、自分のブラウザ情報を使用すると解析結果が表示されます。",
+    "os": "OS",
+    "browser": "ブラウザ",
+    "device": "デバイス",
+    "engine": "エンジン",
+    "version": "バージョン",
+    "deviceDesktop": "デスクトップ",
+    "deviceMobile": "モバイル",
+    "deviceTablet": "タブレット",
+    "deviceTv": "スマートTV",
+    "deviceBot": "ボット / クローラー",
+    "deviceUnknown": "不明",
+    "unknown": "不明",
+    "help": {
+      "description1": "User-Agent文字列は偽装できるため、セキュリティ目的で信頼すべきではありません。",
+      "description2": "多くのUser-Agent文字列は歴史的な互換性のため、今も「Mozilla/5.0」で始まります。",
+      "description3": "すべての解析はブラウザ内でローカルに実行され、外部サーバーには送信されません。"
+    }
+  },
+  "sqlFormatter": {
+    "title": "SQLフォーマッター",
+    "subtitle": "読みにくい複雑なSQLクエリを一貫したインデントで整形します。",
+    "inputLabel": "SQLクエリ",
+    "pastePlaceholder": "SQLクエリをここに貼り付けてください...",
+    "outputLabel": "整形されたSQL",
+    "outputEmpty": "整形されたSQLがここに表示されます。",
+    "clear": "クリア",
+    "copy": "コピー",
+    "copied": "コピーしました！",
+    "dialect": "SQL方言",
+    "dialectStandard": "標準SQL",
+    "dialectMariadb": "MariaDB",
+    "dialectMysql": "MySQL",
+    "dialectPostgresql": "PostgreSQL",
+    "dialectSqlite": "SQLite",
+    "dialectBigquery": "BigQuery",
+    "dialectDb2": "DB2",
+    "dialectHive": "Hive",
+    "dialectPlsql": "PL/SQL",
+    "dialectRedshift": "Redshift",
+    "dialectSnowflake": "Snowflake",
+    "dialectTsql": "T-SQL",
+    "indentSize": "インデントサイズ",
+    "keywordCase": "キーワードの大文字小文字",
+    "identifierCase": "識別子の大文字小文字",
+    "caseUpper": "大文字",
+    "caseLower": "小文字",
+    "casePreserve": "そのまま",
+    "useTabs": "タブを使用",
+    "invalidInput": "このクエリは整形できません。構文エラーを確認してください。",
+    "help": {
+      "description1": "標準SQLに加え、MySQL、PostgreSQL、T-SQL、Snowflake、BigQueryなど主要な方言に対応しています。",
+      "description2": "インデントサイズ、タブ/スペース、キーワード・識別子の大文字小文字をチームのスタイルに合わせて調整できます。",
+      "description3": "すべての整形はブラウザ内でローカルに実行され、外部サーバーには送信されません。"
+    }
   },
   "qrGenerator": {
     "title": "QR コードジェネレータ",
@@ -356,5 +415,47 @@
     "errorLevelM": "M — 15%",
     "errorLevelQ": "Q — 25%",
     "errorLevelH": "H — 30%"
+  },
+  "regexTester": {
+    "title": "正規表現テスター",
+    "subtitle": "正規表現をテスト文字列にリアルタイムでマッチングし、ハイライト表示・キャプチャグループ・コードスニペットまで確認できます。",
+    "patternLabel": "正規表現",
+    "patternPlaceholder": "パターンを入力してください。例: \\b[A-Za-z]+\\b",
+    "flags": "フラグ",
+    "flagGlobal": "グローバル (g)",
+    "flagIgnoreCase": "大文字小文字を無視 (i)",
+    "flagMultiline": "複数行 (m)",
+    "flagDotAll": "ドットオール (s)",
+    "flagUnicode": "Unicode (u)",
+    "presets": "プリセット",
+    "presetEmail": "メールアドレス",
+    "presetUrl": "URL",
+    "presetIpv4": "IPv4アドレス",
+    "presetDate": "日付 (YYYY-MM-DD)",
+    "presetPhone": "電話番号",
+    "presetPassword": "強力なパスワード",
+    "presetUuid": "UUID",
+    "testStringLabel": "テスト文字列",
+    "testStringPlaceholder": "パターンと照合するテキストを入力してください...",
+    "charCount": "文字",
+    "matchesLabel": "マッチ結果",
+    "noMatches": "一致する結果はありません。",
+    "match": "マッチ",
+    "group": "グループ",
+    "replacementLabel": "置換文字列",
+    "replacementPlaceholder": "キャプチャグループを参照するには $1、$2 を使用してください...",
+    "resultLabel": "置換結果",
+    "resultEmpty": "置換結果がここに表示されます。",
+    "codeSnippet": "コードスニペット",
+    "clear": "クリア",
+    "copy": "コピー",
+    "copied": "コピーしました！",
+    "invalidRegex": "無効な正規表現です",
+    "emptyState": "上にパターンとテスト文字列を入力するとマッチ結果が表示されます。",
+    "help": {
+      "description1": "マッチングにはブラウザで動作しているものと同じJavaScript RegExpエンジンを使用します。",
+      "description2": "グローバル(g)フラグをオフにすると、すべてのマッチを検索する代わりに .exec() のような単一マッチの挙動をテストできます。",
+      "description3": "すべてのマッチングはブラウザ内でローカルに実行され、外部サーバーには送信されません。"
+    }
   }
 }
