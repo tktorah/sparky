@@ -74,35 +74,28 @@
     {
       "title": "HTML Entity Converter",
       "description": "Convert special characters to HTML entities and back.",
-      "href": "/en/html-entity",
+      "href": "/en/conv/html-entity",
       "accent": "text-green-500 bg-green-50 dark:bg-green-500/15",
       "icon": "code"
     },
     {
-      "title": "Hex ↔ Text Converter",
-      "description": "Mutually convert between strings and hexadecimal representation.",
-      "href": "/en/hex-text",
-      "accent": "text-slate-500 bg-slate-100 dark:bg-slate-500/15",
-      "icon": "binary"
-    },
-    {
       "title": "Color Code Converter",
       "description": "Switch between HEX, RGB, and HSL to inspect and pick colors.",
-      "href": "/en/color-converter",
+      "href": "/en/conv/color-converter",
       "accent": "text-pink-500 bg-pink-50 dark:bg-pink-500/15",
       "icon": "palette"
     },
     {
       "title": "UUID Generator",
       "description": "Generate as many UUID v4 values as you need and copy them instantly.",
-      "href": "/en/uuid-generator",
+      "href": "/en/conv/uuid-generator",
       "accent": "text-sky-500 bg-sky-50 dark:bg-sky-500/15",
       "icon": "fingerprint"
     },
     {
       "title": "Hash Generator",
       "description": "Generate MD5 and SHA hashes from input text.",
-      "href": "/en/hash-generator",
+      "href": "/en/conv/hash-generator",
       "accent": "text-purple-500 bg-purple-50 dark:bg-purple-500/15",
       "icon": "hash"
     },
@@ -123,7 +116,7 @@
     {
       "title": "IP Address Lookup",
       "description": "Check your external IP address and connection information.",
-      "href": "/en/ip-locator",
+      "href": "/en/conv/ip-locator",
       "accent": "text-teal-500 bg-teal-50 dark:bg-teal-500/15",
       "icon": "link"
     },
@@ -135,32 +128,11 @@
       "icon": "fingerprint"
     },
     {
-      "title": "Word Counter",
-      "description": "Count characters, words, lines, and bytes in real time.",
-      "href": "/en/word-counter",
-      "accent": "text-emerald-500 bg-emerald-50 dark:bg-emerald-500/15",
-      "icon": "file"
-    },
-    {
-      "title": "Case Converter",
-      "description": "Convert text to uppercase, lowercase, snake_case, camelCase, and more.",
-      "href": "/en/case-converter",
-      "accent": "text-blue-500 bg-blue-50 dark:bg-blue-500/15",
-      "icon": "case"
-    },
-    {
       "title": "Regex Tester",
       "description": "Enter a regular expression and instantly see match results.",
       "href": "/en/conv/regex-tester",
       "accent": "text-purple-500 bg-purple-50 dark:bg-purple-500/15",
       "icon": "searchCode"
-    },
-    {
-      "title": "Text Diff",
-      "description": "Compare two texts side-by-side and highlight the differences.",
-      "href": "/en/text-diff",
-      "accent": "text-orange-500 bg-orange-50 dark:bg-orange-500/15",
-      "icon": "split"
     }
   ],
   "jsonFormatter": {
@@ -485,5 +457,141 @@
     "loadSample": "Load Sample",
     "tokenInfo": "Token Info",
     "parts": "parts"
+  },
+  "ipLocator": {
+    "title": "IP Address Lookup",
+    "subtitle": "Check your public IP address, geolocation, ISP, and network details.",
+    "yourIp": "Your IP Address",
+    "ipVersion": "IP Version",
+    "location": "Location",
+    "country": "Country",
+    "region": "Region",
+    "city": "City",
+    "coordinates": "Coordinates",
+    "isp": "ISP",
+    "asn": "ASN",
+    "timezone": "Timezone",
+    "refresh": "Refresh",
+    "copyIp": "Copy IP",
+    "copied": "Copied!",
+    "viewOnMap": "View on Google Maps",
+    "loading": "Detecting your IP address...",
+    "errorTitle": "Couldn't detect your IP address",
+    "errorMessage": "The lookup service may be temporarily unavailable. Please try again.",
+    "retry": "Retry",
+    "help": {
+      "description1": "Location data is approximate and based on your public IP address, not GPS.",
+      "description2": "If you're using a VPN or proxy, this shows the exit server's location, not your actual location.",
+      "description3": "This lookup is provided by a third-party geolocation API (ipwho.is); no data is stored on our servers."
+    }
+  },
+  "hashGenerator": {
+    "title": "Hash Generator",
+    "subtitle": "Generate MD5, SHA-1, SHA-256, SHA-512 and SHA-3 hashes from text or a file, with optional HMAC.",
+    "tabText": "Text",
+    "tabFile": "File",
+    "inputLabel": "Text",
+    "pastePlaceholder": "Enter text to hash...",
+    "fileLabel": "File",
+    "chooseFile": "Choose File",
+    "noFileChosen": "No file selected",
+    "removeFile": "Remove",
+    "useHmac": "Use HMAC",
+    "hmacKeyLabel": "Secret Key",
+    "hmacKeyPlaceholder": "Enter a secret key...",
+    "outputCase": "Output Case",
+    "caseLower": "lowercase",
+    "caseUpper": "UPPERCASE",
+    "clear": "Clear",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "chars": "chars",
+    "emptyState": "Enter text or choose a file above to generate hashes.",
+    "help": {
+      "description1": "MD5 and SHA-1 are fast but no longer considered secure against collision attacks; prefer SHA-256 or SHA-3 for security-sensitive use.",
+      "description2": "Enable HMAC to generate a keyed hash for verifying message integrity and authenticity with a shared secret.",
+      "description3": "All hashing runs locally in your browser; nothing is sent to external servers."
+    }
+  },
+  "htmlEntity": {
+    "title": "HTML Entity Converter",
+    "subtitle": "Convert special characters to HTML entities and back, with named, decimal, and hexadecimal reference support.",
+    "encode": "Encode",
+    "decode": "Decode",
+    "format": "Format",
+    "formatNamed": "Named",
+    "formatDecimal": "Decimal",
+    "formatHex": "Hex",
+    "encodeNonAscii": "Encode non-ASCII characters too",
+    "inputLabel": "Input",
+    "pastePlaceholder": "Enter text or HTML entities here...",
+    "outputLabel": "Output",
+    "outputEmpty": "The result will appear here.",
+    "clear": "Clear",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "commonEntities": "Common Entities",
+    "help": {
+      "description1": "Encoding escapes reserved characters like <, >, and & so they render safely as text instead of being parsed as HTML.",
+      "description2": "Supports named references (&amp;), decimal (&#38;), and hexadecimal (&#x26;) numeric references.",
+      "description3": "All conversion runs locally in your browser; nothing is sent to external servers."
+    }
+  },
+  "colorConverter": {
+    "title": "Color Code Converter",
+    "subtitle": "Convert between HEX, RGB, and HSL, preview colors, check WCAG contrast, and explore color harmonies.",
+    "preview": "Preview",
+    "opacity": "Opacity",
+    "hex": "HEX",
+    "rgb": "RGB",
+    "rgba": "RGBA",
+    "hsl": "HSL",
+    "hsla": "HSLA",
+    "red": "Red",
+    "green": "Green",
+    "blue": "Blue",
+    "hue": "Hue",
+    "saturation": "Saturation",
+    "lightness": "Lightness",
+    "nearestTailwind": "Closest Tailwind Class",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "invalidHex": "Enter a valid HEX color, e.g. #3b82f6",
+    "contrastTitle": "WCAG Contrast",
+    "contrastVsWhite": "vs. White",
+    "contrastVsBlack": "vs. Black",
+    "wcagAANormal": "AA (Normal Text)",
+    "wcagAAANormal": "AAA (Normal Text)",
+    "wcagAALarge": "AA (Large Text)",
+    "pass": "Pass",
+    "fail": "Fail",
+    "harmonyTitle": "Color Harmony",
+    "harmonyComplementary": "Complementary",
+    "harmonyAnalogous": "Analogous",
+    "harmonyTriadic": "Triadic",
+    "harmonyMonochromatic": "Monochromatic",
+    "help": {
+      "description1": "This tool is for digital displays (light-based RGB); print production needs a dedicated CMYK tool.",
+      "description2": "WCAG contrast ratios are calculated against pure white and pure black backgrounds using the standard relative luminance formula.",
+      "description3": "All calculations run locally in your browser; nothing is sent to external servers."
+    }
+  },
+  "uuidGenerator": {
+    "title": "UUID Generator",
+    "subtitle": "Generate cryptographically strong UUID v4 values in bulk, with hyphen and case options.",
+    "count": "Count",
+    "includeHyphens": "Include hyphens",
+    "uppercase": "Generate uppercase",
+    "generate": "Generate New UUIDs",
+    "resultsLabel": "Generated",
+    "copyAll": "Copy All",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "emptyState": "Click \"Generate New UUIDs\" to create some.",
+    "help": {
+      "description1": "UUID v4 values are generated using the Web Crypto API's cryptographically secure random number generator, per RFC 4122.",
+      "description2": "Generate between 1 and 100 UUIDs at once, with optional hyphens and uppercase formatting.",
+      "description3": "All generation runs locally in your browser; nothing is sent to external servers."
+    }
   }
 }

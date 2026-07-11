@@ -21,4 +21,5 @@ export type IconName =
   | "qr"
   | "searchCode"
   | "split"
+  | "sparky"
   | "type";

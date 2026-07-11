@@ -71,6 +71,12 @@ const paths: Record<IconName, React.ReactNode> = {
       <path d="M8 11V7a4 4 0 0 1 8 0v4" />
     </>
   ),
+  sparky: (
+    <>
+    <path d="M12 3v4M12 17v4M3 12h4M17 12h4" />
+    <path d="M6.3 6.3l2.1 2.1M15.6 15.6l2.1 2.1M17.7 6.3l-2.1 2.1M8.4 15.6l-2.1 2.1" />
+  </>
+  ),
   palette: (
     <>
       <path d="M12 22a10 9 0 1 1 10-9 5 5 0 0 1-5 5h-2.2a1.8 1.8 0 0 0-1.4 2.8l.3.4a1.8 1.8 0 0 1-1.7.8Z" />

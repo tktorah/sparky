@@ -3,7 +3,6 @@
 import { useState, useRef, useEffect } from "react";
 import type { Locale } from "@/app/[lang]/dictionaries";
 import { localeNames, localeFlags } from "@/app/[lang]/dictionaries";
-import { useTheme } from "next-themes";
 
 type HeaderProps = {
   collapsed: boolean;
@@ -42,7 +41,6 @@ export function Header({
 }: HeaderProps) {
   const [langMenuOpen, setLangMenuOpen] = useState(false);
   const langMenuRef = useRef<HTMLDivElement>(null);
-  const { theme, setTheme } = useTheme();
 
   // 외부 클릭 시 언어 드롭다운 닫기
   useEffect(() => {
@@ -59,14 +57,7 @@ export function Header({
   }, []);
 
   const setDarkTheme = () => {
-    const savedTheme = localStorage.getItem("darkTheme");
-    if (savedTheme === "true") {
-      localStorage.setItem("darkTheme", "false");
-    } else {
-      localStorage.setItem("darkTheme", "true");
-    }
-    setTheme(theme === "dark" ? "light" : "dark");
-    // setDark(theme === "dark" ? false : true);
+    localStorage.setItem("darkTheme", dark ? "false" : "true");
     onToggleDark();
   };
   return (

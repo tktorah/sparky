@@ -23,10 +23,10 @@ export default function RootLayout({
             (function() {
               try {
                 var theme = localStorage.getItem('darkTheme');
-                if (theme === 'true') {
-                  document.documentElement.classList.add('dark');
-                } else {
+                if (theme === 'false') {
                   document.documentElement.classList.remove('dark');
+                } else {
+                  document.documentElement.classList.add('dark');
                 }
               } catch(e) {}
             })();
