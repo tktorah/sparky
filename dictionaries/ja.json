@@ -30,13 +30,6 @@
   },
   "tools": [
     {
-      "title": "JSON フォーマッター",
-      "description": "複雑なJSONを読みやすく整形し、構文エラーも見つけやすくします。",
-      "href": "/ja/conv/json-formatter",
-      "accent": "text-blue-500 bg-blue-50 dark:bg-blue-500/15",
-      "icon": "braces"
-    },
-    {
       "title": "Base64 変換",
       "description": "テキストやデータをBase64へエンコード、または元の形式へデコードします。",
       "href": "/ja/conv/base64",
@@ -51,11 +44,32 @@
       "icon": "link"
     },
     {
+      "title": "JSON フォーマッター",
+      "description": "複雑なJSONを読みやすく整形し、構文エラーも見つけやすくします。",
+      "href": "/ja/conv/json-formatter",
+      "accent": "text-blue-500 bg-blue-50 dark:bg-blue-500/15",
+      "icon": "braces"
+    },
+    {
       "title": "SQL フォーマッター",
       "description": "複雑なSQLクエリを読みやすい形に整えてレビューしやすくします。",
       "href": "/ja/conv/sql-formatter",
       "accent": "text-indigo-500 bg-indigo-50 dark:bg-indigo-500/15",
       "icon": "database"
+    },
+    {
+      "title": "Unix 時間変換",
+      "description": "Unixタイムスタンプと通常日時を相互変換できます。",
+      "href": "/ja/conv/epoch-converter",
+      "accent": "text-sky-500 bg-sky-50 dark:bg-sky-500/15",
+      "icon": "clock"
+    },
+    {
+      "title": "User-Agent パーサー",
+      "description": "User-Agent文字列からOS、ブラウザ、デバイス情報を読み取ります。",
+      "href": "/ja/conv/user-agent",
+      "accent": "text-fuchsia-500 bg-fuchsia-50 dark:bg-fuchsia-500/15",
+      "icon": "fingerprint"
     },
     {
       "title": "JWT デコーダー",
@@ -79,13 +93,6 @@
       "icon": "code"
     },
     {
-      "title": "カラーコード変換",
-      "description": "HEX、RGB、HSLを切り替えながら色を確認できます。",
-      "href": "/ja/conv/color-converter",
-      "accent": "text-pink-500 bg-pink-50 dark:bg-pink-500/15",
-      "icon": "palette"
-    },
-    {
       "title": "UUID ジェネレーター",
       "description": "UUID v4を必要な数だけ生成してすぐにコピーできます。",
       "href": "/ja/conv/uuid-generator",
@@ -107,11 +114,18 @@
       "icon": "qr"
     },
     {
-      "title": "Unix 時間変換",
-      "description": "Unixタイムスタンプと通常日時を相互変換できます。",
-      "href": "/ja/conv/epoch-converter",
-      "accent": "text-sky-500 bg-sky-50 dark:bg-sky-500/15",
-      "icon": "clock"
+      "title": "正規表現テスター",
+      "description": "正規表現を入力してマッチ結果をすぐに確認できます。",
+      "href": "/ja/conv/regex-tester",
+      "accent": "text-purple-500 bg-purple-50 dark:bg-purple-500/15",
+      "icon": "searchCode"
+    },
+    {
+      "title": "カラーコード変換",
+      "description": "HEX、RGB、HSLの間で色を変換し、色を確認・選択できます。",
+      "href": "/ja/conv/color-converter",
+      "accent": "text-pink-500 bg-pink-50 dark:bg-pink-500/15",
+      "icon": "palette"
     },
     {
       "title": "IP アドレス確認",
@@ -119,20 +133,6 @@
       "href": "/ja/conv/ip-locator",
       "accent": "text-teal-500 bg-teal-50 dark:bg-teal-500/15",
       "icon": "link"
-    },
-    {
-      "title": "User-Agent パーサー",
-      "description": "User-Agent文字列からOS、ブラウザ、デバイス情報を読み取ります。",
-      "href": "/ja/conv/user-agent",
-      "accent": "text-fuchsia-500 bg-fuchsia-50 dark:bg-fuchsia-500/15",
-      "icon": "fingerprint"
-    },
-    {
-      "title": "正規表現テスター",
-      "description": "正規表現を入力してマッチ結果をすぐに確認できます。",
-      "href": "/ja/conv/regex-tester",
-      "accent": "text-purple-500 bg-purple-50 dark:bg-purple-500/15",
-      "icon": "searchCode"
     }
   ],
   "jsonFormatter": {
@@ -593,5 +593,12 @@
       "description2": "一度に1個から100個まで生成でき、ハイフンの有無や大文字形式を選択できます。",
       "description3": "すべての生成はブラウザ内でローカルに実行され、外部サーバーには送信されません。"
     }
+  },
+  "search": {
+    "popularTools": "人気ツール",
+    "noResults": "検索結果がありません。",
+    "enterToSelect": "選択",
+    "arrowsToNavigate": "移動",
+    "close": "閉じる"
   }
 }

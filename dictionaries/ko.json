@@ -30,13 +30,6 @@
   },
   "tools": [
     {
-      "title": "JSON 포매터",
-      "description": "복잡한 JSON을 읽기 쉽게 정렬하고 구문 오류를 쉽게 찾을 수 있습니다.",
-      "href": "/ko/conv/json-formatter",
-      "accent": "text-blue-500 bg-blue-50 dark:bg-blue-500/15",
-      "icon": "braces"
-    },
-    {
       "title": "Base64 변환",
       "description": "텍스트나 데이터를 Base64로 인코딩하거나 원래 형식으로 디코딩합니다.",
       "href": "/ko/conv/base64",
@@ -51,11 +44,32 @@
       "icon": "link"
     },
     {
+      "title": "JSON 포매터",
+      "description": "복잡한 JSON을 읽기 쉽게 정렬하고 구문 오류를 쉽게 찾을 수 있습니다.",
+      "href": "/ko/conv/json-formatter",
+      "accent": "text-blue-500 bg-blue-50 dark:bg-blue-500/15",
+      "icon": "braces"
+    },
+    {
       "title": "SQL 포매터",
       "description": "복잡한 SQL 쿼리를 읽기 쉬운 형태로 정리하여 리뷰하기 쉽게 합니다.",
       "href": "/ko/conv/sql-formatter",
       "accent": "text-indigo-500 bg-indigo-50 dark:bg-indigo-500/15",
       "icon": "database"
+    },
+    {
+      "title": "Unix 시간 변환",
+      "description": "Unix 타임스탬프와 일반 날짜/시간을 상호 변환합니다.",
+      "href": "/ko/conv/epoch-converter",
+      "accent": "text-sky-500 bg-sky-50 dark:bg-sky-500/15",
+      "icon": "clock"
+    },
+    {
+      "title": "User-Agent 파서",
+      "description": "User-Agent 문자열에서 OS, 브라우저, 디바이스 정보를 추출합니다.",
+      "href": "/ko/conv/user-agent",
+      "accent": "text-fuchsia-500 bg-fuchsia-50 dark:bg-fuchsia-500/15",
+      "icon": "fingerprint"
     },
     {
       "title": "JWT 디코더",
@@ -79,13 +93,6 @@
       "icon": "code"
     },
     {
-      "title": "색상 코드 변환",
-      "description": "HEX, RGB, HSL을 전환하며 색상을 확인하고 선택할 수 있습니다.",
-      "href": "/ko/conv/color-converter",
-      "accent": "text-pink-500 bg-pink-50 dark:bg-pink-500/15",
-      "icon": "palette"
-    },
-    {
       "title": "UUID 생성기",
       "description": "UUID v4를 원하는 수만큼 생성하고 즉시 복사할 수 있습니다.",
       "href": "/ko/conv/uuid-generator",
@@ -107,11 +114,18 @@
       "icon": "qr"
     },
     {
-      "title": "Unix 시간 변환",
-      "description": "Unix 타임스탬프와 일반 날짜/시간을 상호 변환합니다.",
-      "href": "/ko/conv/epoch-converter",
-      "accent": "text-sky-500 bg-sky-50 dark:bg-sky-500/15",
-      "icon": "clock"
+      "title": "정규식 테스터",
+      "description": "정규식을 입력하고 매칭 결과를 즉시 확인할 수 있습니다.",
+      "href": "/ko/conv/regex-tester",
+      "accent": "text-purple-500 bg-purple-50 dark:bg-purple-500/15",
+      "icon": "searchCode"
+    },
+    {
+      "title": "색상 코드 변환",
+      "description": "HEX, RGB, HSL을 전환하며 색상을 확인하고 선택할 수 있습니다.",
+      "href": "/ko/conv/color-converter",
+      "accent": "text-pink-500 bg-pink-50 dark:bg-pink-500/15",
+      "icon": "palette"
     },
     {
       "title": "IP 주소 확인",
@@ -119,20 +133,6 @@
       "href": "/ko/conv/ip-locator",
       "accent": "text-teal-500 bg-teal-50 dark:bg-teal-500/15",
       "icon": "link"
-    },
-    {
-      "title": "User-Agent 파서",
-      "description": "User-Agent 문자열에서 OS, 브라우저, 디바이스 정보를 추출합니다.",
-      "href": "/ko/conv/user-agent",
-      "accent": "text-fuchsia-500 bg-fuchsia-50 dark:bg-fuchsia-500/15",
-      "icon": "fingerprint"
-    },
-    {
-      "title": "정규식 테스터",
-      "description": "정규식을 입력하고 매칭 결과를 즉시 확인할 수 있습니다.",
-      "href": "/ko/conv/regex-tester",
-      "accent": "text-purple-500 bg-purple-50 dark:bg-purple-500/15",
-      "icon": "searchCode"
     }
   ],
   "jsonFormatter": {
@@ -593,5 +593,12 @@
       "description2": "한 번에 1개부터 100개까지 생성할 수 있으며, 하이픈 포함 여부와 대문자 형식을 선택할 수 있습니다.",
       "description3": "모든 생성은 사용자의 브라우저 내에서 직접 수행되며, 외부 서버로 전송되지 않습니다."
     }
+  },
+  "search": {
+    "popularTools": "인기 도구",
+    "noResults": "검색 결과가 없습니다.",
+    "enterToSelect": "선택",
+    "arrowsToNavigate": "이동",
+    "close": "닫기"
   }
 }

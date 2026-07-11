@@ -5,6 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { Sidebar } from "@/src/components/sidebar";
 import { Header } from "@/src/components/header";
 import { Footer } from "@/src/components/footer";
+import { SearchDialog } from "@/src/components/search-dialog";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
 import { locales, defaultLocale } from "@/app/[lang]/dictionaries";
 import type { Locale } from "@/app/[lang]/dictionaries";
@@ -13,28 +14,34 @@ type ConvLayoutClientProps = {
   children: ReactNode;
   lang: Locale;
   dict: Dictionary;
+  initialCollapsed: boolean;
 };
 
 export function ConvLayoutClient({
   children,
   lang,
   dict,
+  initialCollapsed,
 }: ConvLayoutClientProps) {
-  const [query, setQuery] = useState("");
+  const [searchOpen, setSearchOpen] = useState(false);
   // Defaults to dark (matching the server-rendered markup and the inline
   // script in app/layout.tsx, which also defaults to dark unless the user
   // has explicitly opted into light mode). The persisted preference is
   // reconciled after mount below so a saved "false" is respected too.
   const [dark, setDark] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [collapsed, setCollapsed] = useState(false);
+  // Sourced from a cookie the server already read (see layout.tsx), so the
+  // very first render is correct — no post-mount flash. Navigation in this
+  // app is a full page load, so a cookie (sent with the request) is what
+  // makes that possible; localStorage can't be read until after hydration.
+  const [collapsed, setCollapsed] = useState(initialCollapsed);
   const router = useRouter();
   const pathname = usePathname();
 
   useEffect(() => {
     const id = setTimeout(() => {
-      const stored = localStorage.getItem("darkTheme");
-      if (stored !== null) setDark(stored === "true");
+      const storedDark = localStorage.getItem("darkTheme");
+      if (storedDark !== null) setDark(storedDark === "true");
     }, 0);
     return () => clearTimeout(id);
   }, []);
@@ -48,6 +55,24 @@ export function ConvLayoutClient({
     document.documentElement.classList.toggle("dark", next);
     localStorage.setItem("darkTheme", String(next));
   }
+
+  function handleToggleCollapsed() {
+    const next = !collapsed;
+    setCollapsed(next);
+    document.cookie = `sidebarCollapsed=${next}; path=/; max-age=31536000`;
+  }
+
+  // Global ⌘K / Ctrl+K shortcut to open the search dialog from anywhere.
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+        e.preventDefault();
+        setSearchOpen(true);
+      }
+    };
+    document.addEventListener("keydown", handler);
+    return () => document.removeEventListener("keydown", handler);
+  }, []);
 
   // 언어 전환: 현재 경로의 언어 prefix를 새 언어로 교체
   function handleLangChange(newLang: Locale) {
@@ -87,16 +112,15 @@ export function ConvLayoutClient({
             collapsed={collapsed}
             dark={dark}
             menuOpen={menuOpen}
-            query={query}
             lang={lang}
             locales={locales}
             searchPlaceholder={dict.header.searchPlaceholder}
             collapseLabel={dict.header.collapseLabel}
             menuLabel={dict.header.menuLabel}
             darkModeLabel={dict.header.darkModeLabel}
-            onToggleCollapsed={() => setCollapsed((v) => !v)}
+            onToggleCollapsed={handleToggleCollapsed}
             onOpenMenu={() => setMenuOpen(true)}
-            onQueryChange={setQuery}
+            onOpenSearch={() => setSearchOpen(true)}
             onToggleDark={handleToggleDark}
             onLangChange={handleLangChange}
           />
@@ -106,6 +130,14 @@ export function ConvLayoutClient({
           <Footer dict={dict.footer} />
         </div>
       </div>
+
+      <SearchDialog
+        open={searchOpen}
+        onClose={() => setSearchOpen(false)}
+        tools={dict.tools}
+        search={dict.search}
+        placeholder={dict.header.searchPlaceholder}
+      />
     </div>
   );
 }
