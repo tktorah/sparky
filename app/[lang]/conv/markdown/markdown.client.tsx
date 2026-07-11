@@ -62,14 +62,12 @@ export function MarkdownClient({ dict }: MarkdownClientProps) {
   const [lines, setLines] = useState<number[]>([1]);
 
   useEffect(() => {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    setInput(saved ?? t.defaultContent);
+    setInput(t.defaultContent);
     setHydrated(true);
   }, [t.defaultContent]);
 
   useEffect(() => {
     if (!hydrated) return;
-    localStorage.setItem(STORAGE_KEY, input);
   }, [input, hydrated]);
 
   useEffect(() => {
@@ -94,7 +92,6 @@ export function MarkdownClient({ dict }: MarkdownClientProps) {
 
   const handleClear = () => {
     setInput("");
-    localStorage.removeItem(STORAGE_KEY);
   };
 
   const handleLoadSample = () => {

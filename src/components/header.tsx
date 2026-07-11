@@ -7,7 +7,6 @@ import { localeNames, localeFlags } from "@/app/[lang]/dictionaries";
 type HeaderProps = {
   collapsed: boolean;
   menuOpen: boolean;
-  query: string;
   lang: Locale;
   locales: readonly Locale[];
   searchPlaceholder: string;
@@ -16,7 +15,7 @@ type HeaderProps = {
   darkModeLabel: string;
   onToggleCollapsed: () => void;
   onOpenMenu: () => void;
-  onQueryChange: (value: string) => void;
+  onOpenSearch: () => void;
   onToggleDark: () => void;
   onLangChange: (lang: Locale) => void;
   dark: boolean;
@@ -25,7 +24,6 @@ type HeaderProps = {
 export function Header({
   collapsed,
   menuOpen,
-  query,
   lang,
   locales,
   searchPlaceholder,
@@ -34,7 +32,7 @@ export function Header({
   darkModeLabel,
   onToggleCollapsed,
   onOpenMenu,
-  onQueryChange,
+  onOpenSearch,
   onToggleDark,
   onLangChange,
   dark,
@@ -56,14 +54,10 @@ export function Header({
     return () => document.removeEventListener("mousedown", handler);
   }, []);
 
-  const setDarkTheme = () => {
-    localStorage.setItem("darkTheme", dark ? "false" : "true");
-    onToggleDark();
-  };
   return (
     <header className="sticky top-0 z-20 flex items-center gap-3 border-b border-slate-200/80 bg-slate-50/75 px-4 py-3 backdrop-blur-xl dark:border-slate-800/80 dark:bg-slate-900/75 md:px-6">
       <button
-        className="hidden h-10 w-10 items-center justify-center rounded-full border text-slate-300 transition hover:border-blue-500/40 hover:text-white lg:inline-flex dark:border-slate-700/80 dark:bg-slate-800/75 dark:text-slate-100"
+        className="hidden h-9 w-9 items-center justify-center rounded-full border text-slate-300 transition hover:border-blue-500/40 hover:text-white lg:inline-flex dark:border-slate-700/80 dark:bg-slate-800/75 dark:text-slate-100"
         type="button"
         aria-label={collapseLabel}
         onClick={onToggleCollapsed}
@@ -82,7 +76,7 @@ export function Header({
         </svg>
       </button>
       <button
-        className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white/80 text-slate-700 shadow-sm transition hover:border-blue-300 lg:hidden dark:border-slate-700 dark:bg-slate-800/80 dark:text-slate-100"
+        className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white/80 text-slate-700 shadow-sm transition hover:border-blue-300 lg:hidden dark:border-slate-700 dark:bg-slate-800/80 dark:text-slate-100"
         type="button"
         aria-label={menuLabel}
         onClick={onOpenMenu}
@@ -101,7 +95,11 @@ export function Header({
         </svg>
       </button>
 
-      <label className="flex min-w-0 flex-1 items-center gap-3 rounded-full border border-slate-200/80 bg-white/75 px-4 py-3 text-slate-500 shadow-[0_6px_25px_-20px_rgba(15,23,42,0.35)] backdrop-blur-xl md:max-w-xl dark:border-slate-700/80 dark:bg-slate-800/75 dark:text-slate-400">
+      <button
+        type="button"
+        onClick={onOpenSearch}
+        className="flex min-w-0 items-center gap-3 rounded-xl border border-slate-200/80 bg-white/75 px-4 py-1.5 text-left text-slate-500 shadow-[0_6px_25px_-20px_rgba(15,23,42,0.35)] backdrop-blur-xl transition hover:border-blue-300 md:max-w-xl dark:border-slate-700/80 dark:bg-slate-800/75 dark:text-slate-400"
+      >
         <svg
           aria-hidden="true"
           className="h-5 w-5 shrink-0"
@@ -115,21 +113,18 @@ export function Header({
           <circle cx="11" cy="11" r="7" />
           <path d="m21 21-4.3-4.3" />
         </svg>
-        <input
-          className="w-full bg-transparent text-slate-900 outline-none placeholder:text-slate-400 dark:text-slate-100"
-          type="search"
-          placeholder={searchPlaceholder}
-          value={query}
-          onChange={(e) => onQueryChange(e.target.value)}
-        />
-      </label>
+        <span className="min-w-0 flex-1 truncate text-slate-400 dark:text-slate-500">{searchPlaceholder}</span>
+        <kbd className="hidden shrink-0 rounded border border-slate-200 bg-slate-50 px-1.5 py-0.5 text-[10px] font-medium text-slate-400 shadow-sm sm:inline-block dark:border-slate-700 dark:bg-slate-800">
+          ⌘K
+        </kbd>
+      </button>
 
       <div className="ml-auto flex items-center gap-2">
         {/* 언어 전환 드롭다운 */}
         <div className="relative" ref={langMenuRef}>
           <button
             id="lang-switcher"
-            className="hidden h-11 items-center justify-center gap-2 rounded-full border border-slate-200/80 bg-white/75 px-4 text-sm font-bold text-slate-700 transition hover:border-blue-300 inline-flex dark:border-slate-700/80 dark:bg-slate-800/75 dark:text-slate-100"
+            className="hidden h-9 items-center justify-center gap-2 rounded-xl border border-slate-200/80 bg-white/75 px-4 text-sm font-bold text-slate-700 transition hover:border-blue-300 inline-flex dark:border-slate-700/80 dark:bg-slate-800/75 dark:text-slate-100"
             type="button"
             aria-haspopup="listbox"
             aria-expanded={langMenuOpen}
@@ -199,10 +194,10 @@ export function Header({
 
         {/* 다크 모드 토글 */}
         <button
-          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200/80 bg-white/75 text-slate-700 transition hover:border-blue-300 dark:border-slate-700/80 dark:bg-slate-800/75 dark:text-slate-100"
+          className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-200/80 bg-white/75 text-slate-700 transition hover:border-blue-300 dark:border-slate-700/80 dark:bg-slate-800/75 dark:text-slate-100"
           type="button"
           aria-label={darkModeLabel}
-          onClick={setDarkTheme}
+          onClick={onToggleDark}
         >
           {dark ? (
             <svg

@@ -30,13 +30,6 @@
   },
   "tools": [
     {
-      "title": "JSON Formatter",
-      "description": "Format complex JSON into a readable structure and catch syntax errors easily.",
-      "href": "/en/conv/json-formatter",
-      "accent": "text-blue-500 bg-blue-50 dark:bg-blue-500/15",
-      "icon": "braces"
-    },
-    {
       "title": "Base64 Converter",
       "description": "Encode text or data to Base64 or decode it back to its original format.",
       "href": "/en/conv/base64",
@@ -51,11 +44,32 @@
       "icon": "link"
     },
     {
+      "title": "JSON Formatter",
+      "description": "Format complex JSON into a readable structure and catch syntax errors easily.",
+      "href": "/en/conv/json-formatter",
+      "accent": "text-blue-500 bg-blue-50 dark:bg-blue-500/15",
+      "icon": "braces"
+    },
+    {
       "title": "SQL Formatter",
       "description": "Format complex SQL queries into a readable form for easier review.",
       "href": "/en/conv/sql-formatter",
       "accent": "text-indigo-500 bg-indigo-50 dark:bg-indigo-500/15",
       "icon": "database"
+    },
+    {
+      "title": "Unix Time Converter",
+      "description": "Convert between Unix timestamps and human-readable date/time.",
+      "href": "/en/conv/epoch-converter",
+      "accent": "text-sky-500 bg-sky-50 dark:bg-sky-500/15",
+      "icon": "clock"
+    },
+    {
+      "title": "User-Agent Parser",
+      "description": "Extract OS, browser, and device information from a User-Agent string.",
+      "href": "/en/conv/user-agent",
+      "accent": "text-fuchsia-500 bg-fuchsia-50 dark:bg-fuchsia-500/15",
+      "icon": "fingerprint"
     },
     {
       "title": "JWT Decoder",
@@ -79,13 +93,6 @@
       "icon": "code"
     },
     {
-      "title": "Color Code Converter",
-      "description": "Switch between HEX, RGB, and HSL to inspect and pick colors.",
-      "href": "/en/conv/color-converter",
-      "accent": "text-pink-500 bg-pink-50 dark:bg-pink-500/15",
-      "icon": "palette"
-    },
-    {
       "title": "UUID Generator",
       "description": "Generate as many UUID v4 values as you need and copy them instantly.",
       "href": "/en/conv/uuid-generator",
@@ -107,11 +114,18 @@
       "icon": "qr"
     },
     {
-      "title": "Unix Time Converter",
-      "description": "Convert between Unix timestamps and human-readable date/time.",
-      "href": "/en/conv/epoch-converter",
-      "accent": "text-sky-500 bg-sky-50 dark:bg-sky-500/15",
-      "icon": "clock"
+      "title": "Regex Tester",
+      "description": "Enter a regular expression and instantly see match results.",
+      "href": "/en/conv/regex-tester",
+      "accent": "text-purple-500 bg-purple-50 dark:bg-purple-500/15",
+      "icon": "searchCode"
+    },
+    {
+      "title": "Color Code Converter",
+      "description": "Switch between HEX, RGB, and HSL to inspect and pick colors.",
+      "href": "/en/conv/color-converter",
+      "accent": "text-pink-500 bg-pink-50 dark:bg-pink-500/15",
+      "icon": "palette"
     },
     {
       "title": "IP Address Lookup",
@@ -119,20 +133,6 @@
       "href": "/en/conv/ip-locator",
       "accent": "text-teal-500 bg-teal-50 dark:bg-teal-500/15",
       "icon": "link"
-    },
-    {
-      "title": "User-Agent Parser",
-      "description": "Extract OS, browser, and device information from a User-Agent string.",
-      "href": "/en/conv/user-agent",
-      "accent": "text-fuchsia-500 bg-fuchsia-50 dark:bg-fuchsia-500/15",
-      "icon": "fingerprint"
-    },
-    {
-      "title": "Regex Tester",
-      "description": "Enter a regular expression and instantly see match results.",
-      "href": "/en/conv/regex-tester",
-      "accent": "text-purple-500 bg-purple-50 dark:bg-purple-500/15",
-      "icon": "searchCode"
     }
   ],
   "jsonFormatter": {
@@ -593,5 +593,12 @@
       "description2": "Generate between 1 and 100 UUIDs at once, with optional hyphens and uppercase formatting.",
       "description3": "All generation runs locally in your browser; nothing is sent to external servers."
     }
+  },
+  "search": {
+    "popularTools": "Popular Tools",
+    "noResults": "No results found.",
+    "enterToSelect": "to select",
+    "arrowsToNavigate": "to navigate",
+    "close": "Close"
   }
 }
