@@ -74,35 +74,28 @@
     {
       "title": "HTML 엔티티 변환",
       "description": "특수 문자를 HTML 엔티티로 변환하고 역변환도 지원합니다.",
-      "href": "/ko/html-entity",
+      "href": "/ko/conv/html-entity",
       "accent": "text-green-500 bg-green-50 dark:bg-green-500/15",
       "icon": "code"
     },
     {
-      "title": "Hex ↔ 텍스트 변환",
-      "description": "문자열과 16진수 표현을 상호 변환합니다.",
-      "href": "/ko/hex-text",
-      "accent": "text-slate-500 bg-slate-100 dark:bg-slate-500/15",
-      "icon": "binary"
-    },
-    {
       "title": "색상 코드 변환",
       "description": "HEX, RGB, HSL을 전환하며 색상을 확인하고 선택할 수 있습니다.",
-      "href": "/ko/color-converter",
+      "href": "/ko/conv/color-converter",
       "accent": "text-pink-500 bg-pink-50 dark:bg-pink-500/15",
       "icon": "palette"
     },
     {
       "title": "UUID 생성기",
       "description": "UUID v4를 원하는 수만큼 생성하고 즉시 복사할 수 있습니다.",
-      "href": "/ko/uuid-generator",
+      "href": "/ko/conv/uuid-generator",
       "accent": "text-sky-500 bg-sky-50 dark:bg-sky-500/15",
       "icon": "fingerprint"
     },
     {
       "title": "해시 생성기",
       "description": "입력 텍스트에서 MD5 및 SHA 계열 해시를 생성합니다.",
-      "href": "/ko/hash-generator",
+      "href": "/ko/conv/hash-generator",
       "accent": "text-purple-500 bg-purple-50 dark:bg-purple-500/15",
       "icon": "hash"
     },
@@ -123,7 +116,7 @@
     {
       "title": "IP 주소 확인",
       "description": "외부 IP 주소와 연결 정보를 확인하는 도구입니다.",
-      "href": "/ko/ip-locator",
+      "href": "/ko/conv/ip-locator",
       "accent": "text-teal-500 bg-teal-50 dark:bg-teal-500/15",
       "icon": "link"
     },
@@ -135,32 +128,11 @@
       "icon": "fingerprint"
     },
     {
-      "title": "글자 수 카운터",
-      "description": "문자 수, 단어 수, 줄 수, 바이트 수를 실시간으로 계산합니다.",
-      "href": "/ko/word-counter",
-      "accent": "text-emerald-500 bg-emerald-50 dark:bg-emerald-500/15",
-      "icon": "file"
-    },
-    {
-      "title": "케이스 변환",
-      "description": "대문자, 소문자, snake_case, camelCase 등으로 변환합니다.",
-      "href": "/ko/case-converter",
-      "accent": "text-blue-500 bg-blue-50 dark:bg-blue-500/15",
-      "icon": "case"
-    },
-    {
       "title": "정규식 테스터",
       "description": "정규식을 입력하고 매칭 결과를 즉시 확인할 수 있습니다.",
       "href": "/ko/conv/regex-tester",
       "accent": "text-purple-500 bg-purple-50 dark:bg-purple-500/15",
       "icon": "searchCode"
-    },
-    {
-      "title": "텍스트 비교",
-      "description": "두 텍스트를 나란히 놓고 차이점을 확인합니다.",
-      "href": "/ko/text-diff",
-      "accent": "text-orange-500 bg-orange-50 dark:bg-orange-500/15",
-      "icon": "split"
     }
   ],
   "jsonFormatter": {
@@ -485,5 +457,141 @@
     "loadSample": "샘플 불러오기",
     "tokenInfo": "토큰 정보",
     "parts": "파츠"
+  },
+  "ipLocator": {
+    "title": "IP 주소 확인",
+    "subtitle": "공인 IP 주소, 위치 정보, ISP, 네트워크 세부 정보를 확인합니다.",
+    "yourIp": "내 IP 주소",
+    "ipVersion": "IP 버전",
+    "location": "위치",
+    "country": "국가",
+    "region": "지역",
+    "city": "도시",
+    "coordinates": "좌표",
+    "isp": "ISP",
+    "asn": "ASN",
+    "timezone": "시간대",
+    "refresh": "새로고침",
+    "copyIp": "IP 복사",
+    "copied": "복사되었습니다!",
+    "viewOnMap": "구글 지도에서 보기",
+    "loading": "IP 주소를 확인하는 중...",
+    "errorTitle": "IP 주소를 확인할 수 없습니다",
+    "errorMessage": "조회 서비스가 일시적으로 불안정할 수 있습니다. 다시 시도해 주세요.",
+    "retry": "다시 시도",
+    "help": {
+      "description1": "위치 정보는 GPS가 아닌 공인 IP 주소를 기반으로 한 근사값입니다.",
+      "description2": "VPN이나 프록시를 사용 중이라면 실제 위치가 아닌 출구 서버의 위치가 표시됩니다.",
+      "description3": "이 조회는 제3자 위치 정보 API(ipwho.is)를 통해 제공되며, 저희 서버에는 어떠한 데이터도 저장되지 않습니다."
+    }
+  },
+  "hashGenerator": {
+    "title": "해시 생성기",
+    "subtitle": "텍스트나 파일로부터 MD5, SHA-1, SHA-256, SHA-512, SHA-3 해시를 생성합니다. HMAC도 지원합니다.",
+    "tabText": "텍스트",
+    "tabFile": "파일",
+    "inputLabel": "텍스트",
+    "pastePlaceholder": "해시로 변환할 텍스트를 입력하세요...",
+    "fileLabel": "파일",
+    "chooseFile": "파일 선택",
+    "noFileChosen": "선택된 파일 없음",
+    "removeFile": "제거",
+    "useHmac": "HMAC 사용",
+    "hmacKeyLabel": "비밀 키",
+    "hmacKeyPlaceholder": "비밀 키를 입력하세요...",
+    "outputCase": "출력 대소문자",
+    "caseLower": "소문자",
+    "caseUpper": "대문자",
+    "clear": "지우기",
+    "copy": "복사",
+    "copied": "복사되었습니다!",
+    "chars": "자",
+    "emptyState": "위에 텍스트를 입력하거나 파일을 선택하면 해시 값을 생성합니다.",
+    "help": {
+      "description1": "MD5와 SHA-1은 빠르지만 충돌 공격에 더 이상 안전하지 않습니다. 보안이 중요한 용도에는 SHA-256이나 SHA-3를 사용하세요.",
+      "description2": "HMAC을 활성화하면 공유 비밀 키로 메시지의 무결성과 인증을 검증할 수 있는 키 기반 해시를 생성합니다.",
+      "description3": "모든 해싱은 사용자의 브라우저 내에서 직접 수행되며, 외부 서버로 전송되지 않습니다."
+    }
+  },
+  "htmlEntity": {
+    "title": "HTML 엔티티 변환기",
+    "subtitle": "특수 문자를 HTML 엔티티로 변환하거나 되돌립니다. 이름 참조, 10진수, 16진수 참조를 모두 지원합니다.",
+    "encode": "인코딩",
+    "decode": "디코딩",
+    "format": "형식",
+    "formatNamed": "이름 참조",
+    "formatDecimal": "10진수",
+    "formatHex": "16진수",
+    "encodeNonAscii": "비-ASCII 문자도 인코딩",
+    "inputLabel": "입력",
+    "pastePlaceholder": "텍스트나 HTML 엔티티를 입력하세요...",
+    "outputLabel": "출력",
+    "outputEmpty": "결과가 여기에 표시됩니다.",
+    "clear": "지우기",
+    "copy": "복사",
+    "copied": "복사되었습니다!",
+    "commonEntities": "자주 쓰는 엔티티",
+    "help": {
+      "description1": "인코딩은 <, >, & 같은 예약 문자를 이스케이프하여 HTML로 해석되지 않고 안전하게 텍스트로 표시되도록 합니다.",
+      "description2": "이름 참조(&amp;), 10진수(&#38;), 16진수(&#x26;) 숫자 참조를 모두 지원합니다.",
+      "description3": "모든 변환은 사용자의 브라우저 내에서 직접 수행되며, 외부 서버로 전송되지 않습니다."
+    }
+  },
+  "colorConverter": {
+    "title": "색상 코드 변환기",
+    "subtitle": "HEX, RGB, HSL 색상 코드를 상호 변환하고 미리보기, WCAG 대비 검사, 색상 조화까지 확인합니다.",
+    "preview": "미리보기",
+    "opacity": "불투명도",
+    "hex": "HEX",
+    "rgb": "RGB",
+    "rgba": "RGBA",
+    "hsl": "HSL",
+    "hsla": "HSLA",
+    "red": "빨강",
+    "green": "초록",
+    "blue": "파랑",
+    "hue": "색조",
+    "saturation": "채도",
+    "lightness": "명도",
+    "nearestTailwind": "가장 가까운 Tailwind 클래스",
+    "copy": "복사",
+    "copied": "복사되었습니다!",
+    "invalidHex": "유효한 HEX 색상을 입력하세요. 예: #3b82f6",
+    "contrastTitle": "WCAG 대비",
+    "contrastVsWhite": "흰색 배경",
+    "contrastVsBlack": "검정 배경",
+    "wcagAANormal": "AA (일반 텍스트)",
+    "wcagAAANormal": "AAA (일반 텍스트)",
+    "wcagAALarge": "AA (큰 텍스트)",
+    "pass": "통과",
+    "fail": "실패",
+    "harmonyTitle": "색상 조화",
+    "harmonyComplementary": "보색",
+    "harmonyAnalogous": "유사색",
+    "harmonyTriadic": "삼각 배색",
+    "harmonyMonochromatic": "단색조",
+    "help": {
+      "description1": "이 도구는 디지털 디스플레이(빛 기반 RGB)용입니다. 인쇄용 CMYK 변환에는 별도의 전용 도구가 필요합니다.",
+      "description2": "WCAG 대비 비율은 표준 상대 휘도 공식을 사용해 순수 흰색·검정 배경을 기준으로 계산됩니다.",
+      "description3": "모든 계산은 사용자의 브라우저 내에서 직접 수행되며, 외부 서버로 전송되지 않습니다."
+    }
+  },
+  "uuidGenerator": {
+    "title": "UUID 생성기",
+    "subtitle": "암호학적으로 안전한 UUID v4 값을 대량으로 생성합니다. 하이픈·대소문자 옵션을 지원합니다.",
+    "count": "생성 개수",
+    "includeHyphens": "하이픈(-) 포함",
+    "uppercase": "대문자로 생성",
+    "generate": "새 UUID 생성하기",
+    "resultsLabel": "생성된 결과",
+    "copyAll": "전체 복사",
+    "copy": "복사",
+    "copied": "복사되었습니다!",
+    "emptyState": "\"새 UUID 생성하기\"를 눌러 UUID를 만들어보세요.",
+    "help": {
+      "description1": "UUID v4 값은 RFC 4122 표준에 따라 Web Crypto API의 암호학적으로 안전한 난수 생성기로 만들어집니다.",
+      "description2": "한 번에 1개부터 100개까지 생성할 수 있으며, 하이픈 포함 여부와 대문자 형식을 선택할 수 있습니다.",
+      "description3": "모든 생성은 사용자의 브라우저 내에서 직접 수행되며, 외부 서버로 전송되지 않습니다."
+    }
   }
 }

@@ -74,35 +74,28 @@
     {
       "title": "HTML エンティティ変換",
       "description": "特殊文字をHTMLエンティティへ変換し、逆変換にも対応します。",
-      "href": "/ja/html-entity",
+      "href": "/ja/conv/html-entity",
       "accent": "text-green-500 bg-green-50 dark:bg-green-500/15",
       "icon": "code"
     },
     {
-      "title": "Hex ↔ テキスト変換",
-      "description": "文字列と16進수表現を相互に変換します。",
-      "href": "/ja/hex-text",
-      "accent": "text-slate-500 bg-slate-100 dark:bg-slate-500/15",
-      "icon": "binary"
-    },
-    {
       "title": "カラーコード変換",
       "description": "HEX、RGB、HSLを切り替えながら色を確認できます。",
-      "href": "/ja/color-converter",
+      "href": "/ja/conv/color-converter",
       "accent": "text-pink-500 bg-pink-50 dark:bg-pink-500/15",
       "icon": "palette"
     },
     {
       "title": "UUID ジェネレーター",
       "description": "UUID v4を必要な数だけ生成してすぐにコピーできます。",
-      "href": "/ja/uuid-generator",
+      "href": "/ja/conv/uuid-generator",
       "accent": "text-sky-500 bg-sky-50 dark:bg-sky-500/15",
       "icon": "fingerprint"
     },
     {
       "title": "ハッシュジェネレーター",
       "description": "入力テキストからMD5やSHA系ハッシュを生成します。",
-      "href": "/ja/hash-generator",
+      "href": "/ja/conv/hash-generator",
       "accent": "text-purple-500 bg-purple-50 dark:bg-purple-500/15",
       "icon": "hash"
     },
@@ -123,7 +116,7 @@
     {
       "title": "IP アドレス確認",
       "description": "外部IPアドレスや接続情報を確認するためのツールです。",
-      "href": "/ja/ip-locator",
+      "href": "/ja/conv/ip-locator",
       "accent": "text-teal-500 bg-teal-50 dark:bg-teal-500/15",
       "icon": "link"
     },
@@ -135,32 +128,11 @@
       "icon": "fingerprint"
     },
     {
-      "title": "文字数カウンター",
-      "description": "文字数、単語数、行数、バイト数をリアルタイムに計算します。",
-      "href": "/ja/word-counter",
-      "accent": "text-emerald-500 bg-emerald-50 dark:bg-emerald-500/15",
-      "icon": "file"
-    },
-    {
-      "title": "ケース変換",
-      "description": "大文字、小文字、スネークケース、キャメルケースなどへ変換します。",
-      "href": "/ja/case-converter",
-      "accent": "text-blue-500 bg-blue-50 dark:bg-blue-500/15",
-      "icon": "case"
-    },
-    {
       "title": "正規表現テスター",
       "description": "正規表現を入力してマッチ結果をすぐに確認できます。",
       "href": "/ja/conv/regex-tester",
       "accent": "text-purple-500 bg-purple-50 dark:bg-purple-500/15",
       "icon": "searchCode"
-    },
-    {
-      "title": "テキスト比較",
-      "description": "2つのテキストを並べて差分を確認します。",
-      "href": "/ja/text-diff",
-      "accent": "text-orange-500 bg-orange-50 dark:bg-orange-500/15",
-      "icon": "split"
     }
   ],
   "jsonFormatter": {
@@ -485,5 +457,141 @@
     "loadSample": "サンプルを読み込む",
     "tokenInfo": "トークン情報",
     "parts": "パーツ"
+  },
+  "ipLocator": {
+    "title": "IPアドレス確認",
+    "subtitle": "公開IPアドレス、位置情報、ISP、ネットワークの詳細を確認します。",
+    "yourIp": "あなたのIPアドレス",
+    "ipVersion": "IPバージョン",
+    "location": "位置情報",
+    "country": "国",
+    "region": "地域",
+    "city": "都市",
+    "coordinates": "座標",
+    "isp": "ISP",
+    "asn": "ASN",
+    "timezone": "タイムゾーン",
+    "refresh": "更新",
+    "copyIp": "IPをコピー",
+    "copied": "コピーしました！",
+    "viewOnMap": "Googleマップで見る",
+    "loading": "IPアドレスを確認しています...",
+    "errorTitle": "IPアドレスを確認できませんでした",
+    "errorMessage": "検索サービスが一時的に利用できない可能性があります。もう一度お試しください。",
+    "retry": "再試行",
+    "help": {
+      "description1": "位置情報はGPSではなく、公開IPアドレスに基づくおおよその値です。",
+      "description2": "VPNやプロキシを使用している場合、実際の位置ではなく出口サーバーの位置が表示されます。",
+      "description3": "この検索はサードパーティの位置情報API（ipwho.is）により提供され、当サイトのサーバーにはデータを保存しません。"
+    }
+  },
+  "hashGenerator": {
+    "title": "ハッシュ生成ツール",
+    "subtitle": "テキストまたはファイルからMD5、SHA-1、SHA-256、SHA-512、SHA-3ハッシュを生成します。HMACにも対応。",
+    "tabText": "テキスト",
+    "tabFile": "ファイル",
+    "inputLabel": "テキスト",
+    "pastePlaceholder": "ハッシュ化するテキストを入力してください...",
+    "fileLabel": "ファイル",
+    "chooseFile": "ファイルを選択",
+    "noFileChosen": "ファイルが選択されていません",
+    "removeFile": "削除",
+    "useHmac": "HMACを使用",
+    "hmacKeyLabel": "シークレットキー",
+    "hmacKeyPlaceholder": "シークレットキーを入力してください...",
+    "outputCase": "出力の大文字小文字",
+    "caseLower": "小文字",
+    "caseUpper": "大文字",
+    "clear": "クリア",
+    "copy": "コピー",
+    "copied": "コピーしました！",
+    "chars": "文字",
+    "emptyState": "上にテキストを入力するか、ファイルを選択するとハッシュ値が生成されます。",
+    "help": {
+      "description1": "MD5とSHA-1は高速ですが、衝突攻撃に対してもはや安全ではありません。セキュリティが重要な用途にはSHA-256やSHA-3を使用してください。",
+      "description2": "HMACを有効にすると、共有シークレットキーでメッセージの完全性と真正性を検証できる鍵付きハッシュを生成します。",
+      "description3": "すべてのハッシュ化はブラウザ内でローカルに実行され、外部サーバーには送信されません。"
+    }
+  },
+  "htmlEntity": {
+    "title": "HTMLエンティティ変換ツール",
+    "subtitle": "特殊文字をHTMLエンティティに変換したり元に戻したりします。名前参照・10進数・16進数参照に対応。",
+    "encode": "エンコード",
+    "decode": "デコード",
+    "format": "形式",
+    "formatNamed": "名前参照",
+    "formatDecimal": "10進数",
+    "formatHex": "16進数",
+    "encodeNonAscii": "非ASCII文字もエンコードする",
+    "inputLabel": "入力",
+    "pastePlaceholder": "テキストまたはHTMLエンティティを入力してください...",
+    "outputLabel": "出力",
+    "outputEmpty": "結果がここに表示されます。",
+    "clear": "クリア",
+    "copy": "コピー",
+    "copied": "コピーしました！",
+    "commonEntities": "よく使うエンティティ",
+    "help": {
+      "description1": "エンコードは <、>、& などの予約文字をエスケープし、HTMLとして解釈されずに安全にテキストとして表示されるようにします。",
+      "description2": "名前参照（&amp;）、10進数（&#38;）、16進数（&#x26;）の数値参照すべてに対応しています。",
+      "description3": "すべての変換はブラウザ内でローカルに実行され、外部サーバーには送信されません。"
+    }
+  },
+  "colorConverter": {
+    "title": "カラーコード変換ツール",
+    "subtitle": "HEX、RGB、HSLカラーコードを相互変換し、プレビュー・WCAGコントラストチェック・配色調和まで確認できます。",
+    "preview": "プレビュー",
+    "opacity": "不透明度",
+    "hex": "HEX",
+    "rgb": "RGB",
+    "rgba": "RGBA",
+    "hsl": "HSL",
+    "hsla": "HSLA",
+    "red": "赤",
+    "green": "緑",
+    "blue": "青",
+    "hue": "色相",
+    "saturation": "彩度",
+    "lightness": "明度",
+    "nearestTailwind": "最も近いTailwindクラス",
+    "copy": "コピー",
+    "copied": "コピーしました！",
+    "invalidHex": "有効なHEXカラーを入力してください。例: #3b82f6",
+    "contrastTitle": "WCAGコントラスト",
+    "contrastVsWhite": "白背景との比較",
+    "contrastVsBlack": "黒背景との比較",
+    "wcagAANormal": "AA（通常テキスト）",
+    "wcagAAANormal": "AAA（通常テキスト）",
+    "wcagAALarge": "AA（大きいテキスト）",
+    "pass": "合格",
+    "fail": "不合格",
+    "harmonyTitle": "配色調和",
+    "harmonyComplementary": "補色",
+    "harmonyAnalogous": "類似色",
+    "harmonyTriadic": "トライアド配色",
+    "harmonyMonochromatic": "モノクロマティック",
+    "help": {
+      "description1": "このツールはデジタルディスプレイ（光ベースのRGB）向けです。印刷用のCMYK変換には専用ツールが必要です。",
+      "description2": "WCAGコントラスト比は標準の相対輝度計算式を使用し、純白・純黒の背景を基準に算出されます。",
+      "description3": "すべての計算はブラウザ内でローカルに実行され、外部サーバーには送信されません。"
+    }
+  },
+  "uuidGenerator": {
+    "title": "UUID生成ツール",
+    "subtitle": "暗号学的に安全なUUID v4を一括生成します。ハイフン・大文字小文字オプションに対応。",
+    "count": "生成数",
+    "includeHyphens": "ハイフン(-)を含める",
+    "uppercase": "大文字で生成",
+    "generate": "新しいUUIDを生成",
+    "resultsLabel": "生成結果",
+    "copyAll": "すべてコピー",
+    "copy": "コピー",
+    "copied": "コピーしました！",
+    "emptyState": "「新しいUUIDを生成」をクリックしてUUIDを作成してください。",
+    "help": {
+      "description1": "UUID v4はRFC 4122に準拠し、Web Crypto APIの暗号学的に安全な乱数生成器を使用して作成されます。",
+      "description2": "一度に1個から100個まで生成でき、ハイフンの有無や大文字形式を選択できます。",
+      "description3": "すべての生成はブラウザ内でローカルに実行され、外部サーバーには送信されません。"
+    }
   }
 }
