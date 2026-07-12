@@ -265,12 +265,7 @@ export function HashGeneratorClient({ dict }: HashGeneratorClientProps) {
 
       {/* Results */}
       {!results ? (
-        <div className="flex flex-col items-center justify-center py-16 text-center">
-          <div className="p-5 bg-purple-50 dark:bg-purple-900/20 rounded-3xl mb-4 border border-purple-100 dark:border-purple-800/30">
-            <Icon name="hash" className="h-10 w-10 text-purple-400 dark:text-purple-500" />
-          </div>
-          <p className="text-slate-500 dark:text-slate-400 font-medium max-w-sm leading-relaxed">{t.emptyState}</p>
-        </div>
+        <></>
       ) : (
         <div className="space-y-3">
           {visibleAlgos.map((algo) => {
