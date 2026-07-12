@@ -2,6 +2,7 @@
 // 실제 <html>, <body>, metadata는 app/[lang]/layout.tsx에서 관리합니다.
 import type { Metadata } from "next";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/nuxt/runtime";
 
 export const metadata: Metadata = {
   title: "Sparky — Developer Tools",
@@ -33,7 +34,9 @@ export default function RootLayout({
           `,
           }}
         />
-        {children}</body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
