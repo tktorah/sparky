@@ -286,7 +286,7 @@ export function HtmlEntityClient({ dict }: HtmlEntityClientProps) {
             </button>
           </div>
           <div className="flex-1 min-h-0 relative">
-            {!input.trim() ? (
+            {input.length === 0 ? (
               <div className="h-full flex items-center justify-center text-slate-400 dark:text-slate-500 font-medium text-center px-6">
                 {t.outputEmpty}
               </div>

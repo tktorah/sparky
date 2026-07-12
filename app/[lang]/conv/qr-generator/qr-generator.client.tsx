@@ -23,7 +23,7 @@ export function QrGeneratorClient({ dict }: QrGeneratorClientProps) {
   const [margin, setMargin] = useState<number>(4);
 
   // Input states per tab
-  const [textInput, setTextInput] = useState("https://proutil.org");
+  const [textInput, setTextInput] = useState("https://sparky-mu-ten.vercel.app/");
   
   // WiFi
   const [wifiSsid, setWifiSsid] = useState("");
