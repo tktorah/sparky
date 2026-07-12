@@ -124,8 +124,8 @@ function nearestTailwindColor(rgb: Rgb): { name: string; hex: string } {
 export function ColorConverterClient({ dict }: ColorConverterClientProps) {
   const t = dict.colorConverter;
 
-  const [color, setColor] = useState<Rgb>({ r: 59, g: 130, b: 246 });
-  const [hexText, setHexText] = useState("#3b82f6");
+  const [color, setColor] = useState<Rgb>({ r: 255, g: 0, b: 0 });
+  const [hexText, setHexText] = useState("#ff0000");
   const [hexError, setHexError] = useState(false);
   const [alpha, setAlpha] = useState(100);
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
