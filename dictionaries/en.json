@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "Smart Developer Toolset | Sparky",
+    "title": "Smart Developer Toolset | DevTora",
     "description": "Online tools for developers. JSON, Base64, URL, JWT, UUID and more — all in one place."
   },
   "nav": {
@@ -232,7 +232,7 @@
       "description2": "Supports tables, task lists, strikethrough, fenced code blocks, and auto-linked URLs.",
       "description3": "Your draft is saved locally in the browser; nothing is sent to external servers."
     },
-    "defaultContent": "## 🚀 Markdown Preview\n\nA real-time previewer with **GitHub Flavored Markdown** support.\n\n### Features\n\n- Real-time conversion ⚡️\n- Table support\n- Auto-link generation\n\n### Code example\n\n```javascript\nconst greeting = \"Hello, Sparky!\";\nconsole.log(greeting);\n```\n\n### Checklist\n\n- [x] GFM enabled\n- [ ] Syntax highlighting — coming soon\n- [ ] Export feature"
+    "defaultContent": "## 🚀 Markdown Preview\n\nA real-time previewer with **GitHub Flavored Markdown** support.\n\n### Features\n\n- Real-time conversion ⚡️\n- Table support\n- Auto-link generation\n\n### Code example\n\n```javascript\nconst greeting = \"Hello, DevTora!\";\nconsole.log(greeting);\n```\n\n### Checklist\n\n- [x] GFM enabled\n- [ ] Syntax highlighting — coming soon\n- [ ] Export feature"
   },
   "epochConverter": {
     "title": "Unix Time Converter",

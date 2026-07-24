@@ -6,7 +6,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
-  title: "Sparky — Developer Tools",
+  title: "DevTora — Developer Tools",
   description: "Online tools for developers.",
 };
 

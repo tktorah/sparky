@@ -220,7 +220,7 @@ export function SearchDialog({ open, onClose, tools, search, placeholder }: Sear
         </div>
 
         <div className="flex items-center justify-end border-t border-slate-100 bg-slate-50 px-4 py-3 text-[11px] text-slate-400 dark:border-slate-800 dark:bg-slate-800/50">
-          <div className="hidden sm:block">Sparky Search</div>
+          <div className="hidden sm:block">DevTora Search</div>
         </div>
       </div>
     </div>

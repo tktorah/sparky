@@ -422,7 +422,7 @@ export function QrGeneratorClient({ dict }: QrGeneratorClientProps) {
                       type="text"
                       value={contactOrg}
                       onChange={(e) => setContactOrg(e.target.value)}
-                      placeholder="Sparky Inc."
+                      placeholder="DevTora Inc."
                       className="w-full px-4 py-2.5 bg-slate-50/50 dark:bg-slate-900/50 border border-slate-200/80 dark:border-slate-700/80 rounded-xl outline-none focus:bg-white dark:focus:bg-slate-800 focus:border-blue-300 dark:focus:border-blue-500 transition-all text-slate-800 dark:text-slate-200 text-sm"
                     />
                   </div>
@@ -521,7 +521,7 @@ export function QrGeneratorClient({ dict }: QrGeneratorClientProps) {
                       type="text"
                       value={eventTitle}
                       onChange={(e) => setEventTitle(e.target.value)}
-                      placeholder="Sparky Hackathon"
+                      placeholder="DevTora Hackathon"
                       className="w-full px-4 py-2.5 bg-slate-50/50 dark:bg-slate-900/50 border border-slate-200/80 dark:border-slate-700/80 rounded-xl outline-none focus:bg-white dark:focus:bg-slate-800 focus:border-blue-300 dark:focus:border-blue-500 transition-all text-slate-800 dark:text-slate-200 text-sm"
                     />
                   </div>
