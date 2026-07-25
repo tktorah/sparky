@@ -1,6 +1,7 @@
 // 이 루트 레이아웃은 Next.js가 요구하는 최상위 레이아웃입니다.
 // 실제 <html>, <body>, metadata는 app/[lang]/layout.tsx에서 관리합니다.
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -38,6 +39,12 @@ export default function RootLayout({
           }}
         />
         {children}
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7745297103052326"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
         <Analytics />
         <SpeedInsights />
       </body>
