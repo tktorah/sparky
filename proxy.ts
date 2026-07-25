@@ -80,9 +80,9 @@ export const config = {
      * 다음 경로를 제외한 모든 경로에 실행:
      * - _next/static (정적 파일)
      * - _next/image (이미지 최적화)
-     * - favicon.ico, sitemap.xml, robots.txt
+     * - favicon.ico, sitemap.xml, robots.txt, ads.txt
      * - og (동적 Open Graph 이미지 생성 라우트, 로케일 prefix 불필요)
      */
-    "/((?!_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt|og).*)",
+    "/((?!_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt|ads.txt|og).*)",
   ],
 };
