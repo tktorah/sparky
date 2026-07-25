@@ -40,12 +40,22 @@ function getPreferredLocale(request: NextRequest): Locale {
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // 로케일 단독 경로 (예: "/ko", "/ko/")인 경우 /ko/conv/home으로 리다이렉트
+  // 루트("/")는 감지된 언어로 실제 리다이렉트하여 주소창에 로케일이 보이도록 함
+  // (예: 현재 언어가 ja면 "/" → "/ja")
+  if (pathname === "/") {
+    const locale = getPreferredLocale(request);
+    const url = request.nextUrl.clone();
+    url.pathname = `/${locale}`;
+    return NextResponse.redirect(url);
+  }
+
+  // 로케일 단독 경로 (예: "/ko", "/ko/")인 경우 /ko/conv/home의 내용을 보여주되,
+  // 주소창의 URL은 "/ko"로 그대로 유지 (redirect가 아닌 rewrite)
   for (const locale of locales) {
     if (pathname === `/${locale}` || pathname === `/${locale}/`) {
       const url = request.nextUrl.clone();
       url.pathname = `/${locale}/conv/home`;
-      return NextResponse.redirect(url);
+      return NextResponse.rewrite(url);
     }
   }
 
@@ -56,14 +66,12 @@ export function proxy(request: NextRequest) {
     return NextResponse.next();
   }
 
+  // 그 외 로케일 prefix가 없는 경로는 감지된 언어의 내용을 보여주되,
+  // 주소창의 URL은 그대로 유지 (redirect가 아닌 rewrite)
   const locale = getPreferredLocale(request);
   const url = request.nextUrl.clone();
-  if (pathname === "/") {
-    url.pathname = `/${locale}/conv/home`;
-  } else {
-    url.pathname = `/${locale}${pathname}`;
-  }
-  return NextResponse.redirect(url);
+  url.pathname = `/${locale}${pathname}`;
+  return NextResponse.rewrite(url);
 }
 
 export const config = {
