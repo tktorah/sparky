@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "스마트 개발자 도구 모음 | Sparky",
+    "title": "스마트 개발자 도구 모음 | DevTora",
     "description": "개발자를 위한 온라인 도구 모음. JSON, Base64, URL, JWT, UUID 등 모든 도구를 한 곳에서."
   },
   "nav": {
@@ -232,7 +232,7 @@
       "description2": "표, 작업 목록, 취소선, 코드 블록, 자동 링크를 지원합니다.",
       "description3": "초안은 브라우저에 로컬 저장되며 외부 서버로 전송되지 않습니다."
     },
-    "defaultContent": "## 🚀 Markdown 미리보기\n\n**GitHub Flavored Markdown**을 지원하는 실시간 미리보기 도구입니다.\n\n### 기능\n\n- 실시간 변환 ⚡️\n- 표 지원\n- 자동 링크 생성\n\n### 코드 예시\n\n```javascript\nconst greeting = \"Hello, Sparky!\";\nconsole.log(greeting);\n```\n\n### 체크리스트\n\n- [x] GFM 적용됨\n- [ ] 구문 강조 — 추후 추가\n- [ ] 내보내기 기능"
+    "defaultContent": "## 🚀 Markdown 미리보기\n\n**GitHub Flavored Markdown**을 지원하는 실시간 미리보기 도구입니다.\n\n### 기능\n\n- 실시간 변환 ⚡️\n- 표 지원\n- 자동 링크 생성\n\n### 코드 예시\n\n```javascript\nconst greeting = \"Hello, DevTora!\";\nconsole.log(greeting);\n```\n\n### 체크리스트\n\n- [x] GFM 적용됨\n- [ ] 구문 강조 — 추후 추가\n- [ ] 내보내기 기능"
   },
   "epochConverter": {
     "title": "Unix 시간 변환기",
