@@ -22,7 +22,7 @@ export function HomePage({ dict }: HomePageProps) {
 
   return (
     <>
-      <section className="grid justify-items-center pb-14 pt-4 text-center md:pb-20">
+      <section className="grid justify-items-center pb-10 pt-1 text-center md:pb-10">
         <div className="inline-flex items-center gap-2 rounded-full border border-blue-500/15 bg-white/75 px-4 py-2 text-sm font-extrabold text-blue-600 shadow-[0_10px_25px_-18px_rgba(37,99,235,0.5)] backdrop-blur-xl dark:bg-slate-800/75 dark:text-blue-400">
           <svg
             aria-hidden="true"
@@ -40,10 +40,8 @@ export function HomePage({ dict }: HomePageProps) {
         </div>
         <h1 className="mt-7 text-5xl font-extrabold leading-tight tracking-normal text-slate-800 dark:text-slate-100 md:text-7xl">
           {home.heading1}
-          <br />
-          <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-emerald-500 bg-clip-text text-transparent">
-            {home.heading2}
-          </span>
+          <br/>
+          {home.heading2}
         </h1>
         <p className="mt-6 max-w-3xl text-base font-semibold leading-8 text-slate-500 dark:text-slate-400 md:text-xl md:leading-9">
           {home.subheading}
